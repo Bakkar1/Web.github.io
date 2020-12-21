@@ -1,0 +1,77 @@
+.form
+{
+    background:#fff;
+    font-size:14px;
+    line-height:1.4286;
+    margin:30px 250px;
+    padding:30px;
+    min-height:450px;
+    color:#202124;
+    font-family:roboto;
+    padding-left:30px;
+    margin-bottom:5px
+}
+.sub
+{
+    float:right;
+    text-decoration:none;
+}
+.sub:hover
+{
+    font-weight:bold;
+    color:#E8B861;
+    text-decoration:blink
+}
+.sub:active
+{
+    background-color:#C0B7CE;
+    color:black
+}
+input
+{
+    margin:10px;
+    font-size:20px;
+    margin-left:0px;
+}
+input:hover
+{
+    border-style:ridge;
+}
+.hier
+{
+    margin-left:0px;
+    min-width:508px;
+}
+fieldset
+{
+    border: 2px solid #6C6C70;
+    border-left-color:#614bc1;
+    border-bottom-color:#EF1717
+}
+select
+{
+    margin-left:250px;
+    margin-bottom:20px;
+    margin:15px 0px 20px 250px;
+}
+.link
+{
+    margin:14px;
+    float:right;
+    font-weight:normal;
+    color:#3F3E3E
+}
+.div1
+{
+    margin-right:200px
+}
+a
+{
+    text-decoration:none;
+    font-weight:bold;
+    color:#5C9EE0
+}
+.utl
+{
+    max-width:300px
+}

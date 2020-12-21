@@ -1,0 +1,111 @@
+/* Mouse Cursor */ 
+/* haka t9der t7akam fl mouse */
+body
+{
+    padding:20px
+}
+.mouse
+{
+    cursor:progress;
+}
+/* kijk deze paginas :  https://codepen.io/chriscoyier/pen/uCwfB  */
+/*  Outline - Width, Style, Color : b7alo b7al l border ghir lfer9 hwa ana l boredr kayzid flmisa7a dyal div wl outlie la  */
+
+
+/*Selector*/
+div.selectors
+{
+    background:none no-repeat scroll rgb(140, 124, 212);
+    padding:10px;
+    margin:10px
+}
+.selectors div, .selectors span
+{
+    margin:10px;
+    padding:10px
+}
+.selectors > p /* > kat3ni direct child ya3ni ghadi ykhdem ghir 3la l paragraf li direct kayn fhadak div*/
+{
+    background-color:#000;
+    color:white;
+    margin:10px;
+    padding:10px
+}
+.selectors div
+{
+    background-color:rgb(21, 172, 59)
+}
+.selectors span
+{
+    background-color:rgb(212, 18, 18)
+}
+/*
+    *            ay 7aja fsaf7a
+    {
+        border:2px solid #333
+    }
+*/
+label + p /* khdem 3la l p li mn ba3d label*/
+{
+    border:3px solid rgb(150, 235, 14)
+}
+.p1 ~ div /* ~ khdem 3la div lighayjo mn ba3d l pargraph wli homa khoto 3andhom nafs l parent  */
+{
+    background-color:rgb(228, 44, 151)
+}
+
+/* Pseudo Classes */
+.Pseudo p:first-letter /*awal 7arf*/
+{
+    font-weight:bold;
+    background-color:#000;
+    color:white;
+    text-transform:capitalize;
+    font-size:20px;
+    margin:5px;
+    padding:2px;
+    border-radius:2px
+}
+/* border-radius : y7ayd la9nat dyal border*/
+.Pseudo .pa:first-line
+{
+    color:#008;
+    font-weight:bold
+}
+.Pseudo p:first-child
+{
+    background:none no-repeat scroll #DDD
+}
+/* Attributes */ 
+/*katnas9 bl attributes*/ 
+.Attributes a
+{
+    display:block;
+    margin:10px;
+    font-size:20px
+}
+.Attributes a[target="_blank"]
+{
+    color:#008;
+    font-weight:bold
+}
+.Attributes img[title="img1"]
+{
+    width:40px;
+    height:50px
+}
+/* Media */
+/* kat7adad biha chachat*/
+/*
+    <link rel="stylesheet" href="style/css.css" media="screen">
+    <link rel="stylesheet" href="style/css.css" media="print">
+    <link rel="stylesheet" href="style/css.css" media="all">
+    @media print
+    {
+        p
+        {
+            color:#DDD
+        }
+    }
+
+*/

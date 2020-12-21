@@ -1,0 +1,78 @@
+.div1
+{
+    color:#373A31;
+    font-size:20px; /*size of letters*/
+    direction:ltr; /* left to right*/
+    letter-spacing: /*space between letter*/;
+    line-height:40px; /*space between stora!*/
+    width:500px;
+    height:200px;
+    text-align:left; /*possition of text*/
+    text-align:right;
+    text-align:center;
+    text-indent:40px; /*maak a space van de bigening van de text*/
+}
+.arab
+{
+    font-size:20px;
+    direction:rtl;/*reight to left direction text*/
+    color:#594242;
+}
+
+a
+{
+    text-decoration:none; /*default value*/
+}
+a:hover /* kayban ghir yla klikit 3lih*/
+{
+    text-decoration:underline; /* y7et khat ta7to*/
+}
+
+.a1
+{
+    font-size:20px;
+    text-decoration:overline; /*maak a line boven die*/
+}
+
+.old
+{
+    color:#F00;
+    text-decoration:line-through; /*faut woord*/
+}
+
+.p1
+{
+    text-transform:uppercase; /*alles hoefd letter*/
+    text-transform:lowercase; /*alles klein letter*/
+    text-transform:capitalize; /*eerst letter groot*/
+    /*  """  white-space:nowrap; """ yab9a lklam fsatr wa7d wakha ykhorj mn l7dod dyal div  */
+    word-spacing:10px;
+    letter-spacing:2px;
+}
+
+/*font*/
+.div1
+{
+        font-family:Arial, Tahoma,'Times new roman'; /*yla mal9ch nidam tacheghil lawl ydouz ltani /// search on google "Web safe font"*/
+}
+.p1
+{
+    font-family:Tahoma;
+    font-style: italic;
+    /*font-size= 16px = 100% = 1em ;; smaal,meduim,large.... smaller,larger */
+    font-weight:bold /* bold, bolder,lighter, :of 400=normal 700=bold en er is van 100 tot 900 */;
+    font-weight:700;    
+}
+
+.font1
+{
+    
+    font:font-style / font-weight / font-size / line-height / font family ;
+    font-style:italic;
+    font-weight:bold;
+    font-size:32px;
+    line-height:30px;
+    font-family:Arial, Tahoma, serif;
+    /* alles in een code onder*/
+    font:italic bold 32px/30px Arial, Tahoma, serif;
+}

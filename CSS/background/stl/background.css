@@ -1,0 +1,33 @@
+body
+{
+    /*     this is comment background-image:url('https://www.hoasted.com/wp-content/uploads/2015/05/Gradient-blue-1.jpg');
+    background-repeat:no-repeat;
+    background-repeat:repeat;
+    background-repeat:repeat-x;
+    background-repeat:repeat-y;
+    background-attachment:fixed;
+    background-attachment:scroll;
+    background:url('') repeat scroll 0% 0% #;        */
+    
+    background: url('https://www.hoasted.com/wp-content/uploads/2015/05/Gradient-blue-1.jpg') no-repeat fixed 0% 0% ;
+}
+.div1
+{
+    background-color:#57B6BF;
+}
+ol
+{
+    text-align:center;
+    list-style:none;
+    font-size:20px
+}
+.div2
+{
+    background-image:url('images/icon.png');
+    background-repeat:no-repeat;
+    width:1000px;
+    height:1000px;
+    border:10px;
+    background-color:red;
+    background:url('images/icon.png') no-repeat scroll 80% 10% #DDD;
+}

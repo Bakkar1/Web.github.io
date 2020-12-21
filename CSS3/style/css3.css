@@ -1,0 +1,357 @@
+.clear
+{
+    clear: both;
+}
+/*What's Vendor Prefixes 
+    kanzidhom bach l browser li makyda3moch chi khasiya ywaliw yda3moha
+    matalan hna border-radius
+
+    surf to : https://caniuse.com/
+    to know wath supprot or not 
+    */
+
+/*
+    --webkit-border-radius: ; //google chrome, safari , ios , android
+    --moz-border-radius: ; //mozila firfoxe
+    --o-border-radius: ; //opera
+    --ms-border-radius: ; // internet explorer 
+
+*/
+
+body
+{
+    height: 4900px
+}
+/*===============================================================================================================*/
+/*Border Radius */
+article.radius section
+{
+    height: 500px;
+    width:500px;
+    margin:10px auto;
+    border-radius: 10px 200px 10px 200px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+article.radius section div
+{
+    border-radius: 10px 100% 100% 10px;
+    background-color: blue;
+    height: 70%;
+    width:80%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+article.radius section div P
+{
+    background-color: burlywood;
+    padding: 10px 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 10px;
+}
+
+/*===============================================================================================================*/
+/*box shadow*/
+article.shadow
+{
+    text-align: center;
+}
+article.shadow section
+{
+
+    margin: 50px auto;
+    border: 1px solid #000;
+    height: 200px;
+    background-color: #DDD;
+    width: 300px;
+    transition: all .7s ease-in-out;
+    /*
+        box-shadow: horizontal shadow | virtecal shadow; required
+        box-shadow: horizontal shadow | virtecal shadow | blur | spread| color| inset;
+        hz shadow w vr shadow accept nigative value but blur not
+        blur hwa dbab
+        spread hwa lintichar dyal chadwo bl px
+        inset katkhali shadow ywali ldakhl fl box
+    */
+    box-shadow: 5px 5px 5px #F00 ,
+                -5px -5px 5px #00F; /* haka t9der dir ktar mn shadow 2 4 wat je wilt*/
+}
+article.shadow section:hover
+{
+    box-shadow: -5px -5px 5px #F00 ,
+                5px 5px 5px #00F;
+}
+
+/*============================================================================================*/
+/* Box Sizing*/
+/* 
+    box-sizing: content-box; : lwad3 tabi3i kay7sb l padding wl margin kolchi
+    
+*/
+*
+{
+    box-sizing: border-box; /*maky7sbch border wl padding*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+article.box section
+{
+    width: 940px;
+    margin: 20px auto;
+    background-color: #EEE;
+    text-align: center;
+    overflow: auto;
+}
+article.box section div.left
+{
+    float: left;
+    width: 30%;
+    background-color: #F00;
+    color: #FFF;
+    border: 2px solid chocolate;
+}
+article.box section div.right
+{
+    float: right;
+    width: 70%;
+    background-color: #00F;
+    color: #FFF;
+    padding: 10px;
+}
+
+/*====================================================================================*/
+/*Examples: Box Shadow, Border Radius*/
+article.example
+{
+    text-align: center;
+    background-color: #888;
+    overflow: auto;
+    padding: 50px 0;
+}
+article.example img
+{
+    width:300px;
+    height: 300px;
+    margin: 50px auto 30px;
+    border-radius: 50%;
+    /*
+    padding: 3px;
+    border: 0.5px solid #CCC;
+    background-color: #FFF;
+    */
+    box-shadow: 2px 2px 10px #F00, 
+                -2px -2px 10px #00F;
+    transition: all 1s ease-in-out;
+}
+article.example img:hover
+{
+    box-shadow: -2px -2px 10px #F00, 
+                2px 2px 10px #00F;
+}
+
+
+/*text shadow*/
+/*
+    text-shadow: horizontal shadow | virtecal shadow | blur |color;
+    n9der ndir ktar mn shadow y9dr ykhdem m3a l hover ...
+*/
+article.example h1
+{
+    margin: 10px;
+    text-shadow: 5px 2px 5px #F00,
+                -5px -2px 5px #00F;
+}
+
+
+
+article.oefenen span
+{
+    display: block;
+}
+/*text overflow*/
+article.example div
+{
+    background-color: #333;
+    width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    white-space: nowrap; /*ya3ni ykhali text ymchi 7ta ysali wakha ykhorj mn div*/
+    overflow: hidden;
+    text-overflow: ellipsis; /*kay7t lik 3no9at bach ta3rf bli text ba9i masala*/ /*default value clip*/
+}
+
+/*======================*/
+/*Word Wrap, White Space*/
+div.wordwrap
+{
+    text-align: center;
+}
+div.wordwrap p
+{
+    background-color: #888;
+    width: 300px;
+    border: 1 px solid #CCC;
+    margin: 10px auto;
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+
+/*start 2D Transform*/
+
+/*=======================*/
+/* Transform - Rotate :rotate how y3adal rotation dyal l box
+    deg hiya degree zawiya
+*/
+div.wordwrap
+{
+    position: relative;
+}
+div.wordwrap::after
+{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 2px;
+    background-color: orange;
+    transition: all .5s ease-in-out;
+    transform-origin: left;
+    transform: scaleX(.2);
+}
+div.wordwrap:hover::after
+{
+    transform:scaleX(1);
+}
+div.wordwrap i
+{
+    border: 1px solid #888;
+    font-size: 30px; 
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    transform: rotate(-180deg);
+}
+div.wordwrap i:hover
+{
+    border: 1px solid #F00;
+    transform: rotate(0deg);
+}
+
+/*==============================*/
+/*Transform - Scale : hiya tmadad l container wala tsaghro*/
+
+article.scale
+{
+    width:400px;
+    padding: 20px;
+    margin:50px auto;
+    background-color: antiquewhite;
+}
+/*
+ transform: scale(width, heigth);
+ kaymadad l element
+ yla 3tit ghir 9ima wa7d l width kay3tiha 7ta l heigth
+*/
+article.scale section
+{
+    background-color: #080;
+    color: inherit;
+    text-align: center;
+    height: 180px;
+    transition: all .5s ease-in-out;
+
+}
+article.scale section:hover
+{
+    transform: scale(.5, 1.5);
+}
+article.scale img{
+    transition: all .5s ease-in-out;
+}
+article.scale img:hover{
+    transform: scale(-1, 1);
+}
+/*========================================================*/
+/*2D Transform - Translate */
+/*
+    transform: translate(x, y); translate(px) kay7ark l box
+    transform: translate(-20px, 20px) 
+*/
+article.translate
+{
+    width:400px;
+    padding: 20px;
+    margin:50px auto;
+    background-color: antiquewhite;
+}
+article.translate section
+{
+    background-color: #080;
+    color: inherit;
+    text-align: center;
+    height: 180px;
+    transition: all .5s ease-in-out;
+}
+
+article.translate section:hover
+{
+    transform: translateY(10px) scale(1.1);
+}
+
+/*======================================*/
+/*
+    Transform - Skew
+    skew(Xdeg, Ydeg); skew kaymayl l box wala element b degere
+*/
+article.skew
+{
+    width:400px;
+    padding: 20px;
+    margin:50px auto;
+    background-color: antiquewhite;
+}
+article.skew section
+{
+    background-color: #080;
+    color: inherit;
+    text-align: center;
+    height: 180px;
+    transition: all .5s ease-in-out;
+}
+article.skew section:hover
+{
+    transform: skew(10deg, 10deg);
+}
+
+/*===================================*/
+/*Transform - Matrix*/
+/*
+    transform : matrix( scaleX, skewY, skewX, scaleY, translateX, transletY)
+*/
+div.matrix 
+{
+    width: fit-content;
+    margin: 10px auto;
+}
+div.matrix img {
+    transition: all .5s ease-in-out;
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+}
+div.matrix:hover img {
+    transform: matrix(-1, 1, 2, 1, 100, 10);
+}
+

@@ -1,0 +1,351 @@
+body
+{
+    counter-reset: mk-counter 2; /*bach dir reset l counter hna samito bsmiti */
+    /* by default yla maktebt ra9m mnwra smiya kaykon = 0 */
+    /*fhad l7ala ghaybda mn 2 3 4 5 ....*/
+}
+.clear
+{
+    clear: both;
+}
+
+/*start Counter Increment and How To Use It*/
+div.count ul
+{
+    list-style:none;
+    padding: 0;
+    margin:0;
+}
+div.count ul li:before
+/* darori khask t7et counter-reset fl body*/
+{
+    counter-increment: mk-counter 2;/*ta9riban kat7adad step bach yzid wala yan9os */
+    /*fhad l7ala 2 4 6 8 ...*/
+    content: counter(mk-counter); /*mn ba3d smiya kat7et style*/
+    /*disc : square : decimal : upper-roman*/
+    display:inline-block;
+    width:30px;
+    height:20px;
+    background-color:rgb(197, 91, 91);
+    color:white;
+    text-align: center;
+    border-radius:50%;
+    margin-right: 10px;
+    margin-bottom:5px
+}
+
+/*end Counter Increment and How To Use It*/
+
+/* start Variables */
+/*
+    var(custom property ,faal back value)
+    ,faal back value : yla mal9ach hadak l var liktbto ghayakhod color li ktebt lih tama    
+*/
+:root /*hna kat7et l var global 7it hiya a3la blasa f documet*/
+{
+    /* -- haka kandir variable wknkteb mn ba3do smiya li bghit*/
+    --main-color:#F00;
+    --alter-color:#00F;
+}
+div.Variables
+{
+    --spcolor:rgb(0, 255, 106); /*local var*/
+}
+div.Variables> p
+{
+    font-size:30px;
+    color:var(--alter-color ,orange);
+}
+div.Variables> p span
+{
+    color:var(--spcolor ,black);
+}
+div.Variables section
+{
+    font-size:20px;
+    color:var(--main-color ,black)   
+}
+/* end Variables */
+
+/*start Pseudo Elements*/ /*3anasir mozayafa*/
+article.pe
+{
+    text-align:center
+}
+article.pe section p
+{
+    width:500px;
+    text-align:center;
+    margin:auto
+}
+article.pe section p::first-letter
+{
+    color:#F00;
+    font-weight:bold;
+}
+article.pe section p::first-line
+{
+    font-size: 20px;
+}
+article.pe label::before
+{
+    content:"from pseudo :";
+    color:red
+}
+article.pe form 
+{
+    margin-top:20px;
+}
+article.pe form ul li input
+{
+    margin-left:10px
+}
+article.pe form ul li
+{
+    display: block;
+    margin:5px auto;
+    overflow: hidden;
+}
+article.pe form ul
+{
+    list-style: none;
+}
+article.pe form ul li.li1::before
+{
+    content:"user name";
+    text-transform:capitalize;
+    margin-right:10px
+}
+article.pe form ul li.li2::before
+{
+    content:"password";
+    text-transform:capitalize;
+    margin-right:20px
+}
+article.pe form ul li::after
+{
+    content:"*";
+    color:var(--main-color ,red);
+    margin-left: 5px;
+    font-weight:bold
+}
+/*end Pseudo Elements*/
+/*start progres animation*/
+/*
+    refreach on this article to see the animation
+*/
+article.progres
+{
+    background-color: #333;
+    padding: 20px;
+    color:#FFF;
+}
+article.progres div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+article.progres div ul li
+{
+    list-style: none;
+    position: relative;
+    margin:50px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    min-width: 500px;
+}
+article.progres div ul li::before
+{
+    position: absolute;
+    content: "";
+    width:100%;
+    left:0;
+    top:calc(100% + 10px);
+    height:15px;
+    background-color: rgba(54 ,126 ,223 , .5);
+    border-radius: 1000px;
+}
+article.progres div ul li::after
+{
+    position: absolute;
+    content: "";
+    width:0;
+    left:0;
+    top:calc(100% + 10px);
+    height:15px;
+    background-color: rgba(54 ,126 ,223 , 1);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+article.progres div ul li.html::after
+{
+    animation-name: html;
+}
+@keyframes html
+{
+    to
+    {
+        width:60%;
+    }
+}
+article.progres div ul li.css::after
+{
+    animation-name: css;
+}
+@keyframes css
+{
+    to
+    {
+        width:90%;
+    }
+}
+article.progres div ul li.csharpe::after
+{
+    animation-name: csharpe;
+}
+@keyframes csharpe
+{
+    to
+    {
+        width:40%;
+    }
+}
+article.progres div ul li.python::after
+{
+    animation-name: python;
+}
+@keyframes python
+{
+    to
+    {
+        width:10%;
+    }
+}
+/*end progres animation*/
+/*start drop menu*/
+article.drop
+{
+    height: 400px;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+}
+article.drop ul
+{
+    list-style: none;
+    padding: 0;
+}
+article.drop ul li
+{
+    margin-right:10px
+}
+article.drop li
+{
+    float:left;
+    width:200px;
+    height: 40px;
+    opacity: .8;
+    background-color: black;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+article.drop ul li a
+{
+    display: block;
+    text-decoration: none;
+    color:white
+}
+article.drop ul a:hover
+{
+    color: green;
+}
+article.drop ul li ul li
+{
+    display: none;
+}
+article.drop ul li:hover ul li
+{
+    display: block;
+}
+/*end drop menu*/
+
+
+/*drop down bar*/
+article.dropu
+{
+    overflow: auto;
+    min-height:400px;
+    padding-left: 40px;
+}
+article.dropu ul
+{
+    list-style:none;
+    cursor: pointer;
+    padding: 0;
+
+}
+article.dropu > ul:hover
+{
+    color:greenyellow
+}
+article.dropu > ul li ul
+{
+    margin-left: 12px;
+}
+article.dropu ul li ul li
+{
+    display: none;
+    margin-top:10px;
+    color:#111;
+}
+article.dropu ul li:hover ul li
+{
+    display: block;
+}
+article.dropu ul li ul li a
+{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+article.dropu ul li ul li a:hover
+{
+    color:#00F
+}
+/*end drop down bar*/
+
+/*Learn Everything About Css Inheritance :
+
+    https://www.w3.org/TR/CSS21/propidx.html
+
+    kaynin element by default kaytwarto w element la
+    l elemnt li makytwartoch t9der traj3hom kaytwarto b inherit keyword
+*/
+article.inhr div
+{
+    border:5px solid #00F;
+    padding: 20px 50px;
+    width:400px;
+    margin:10px auto;
+}
+article.inhr div h3
+{
+    border: inherit; /*inherit ya3ni : wret mn l parent li hwa div */
+    margin: inherit;
+    /* proberty : inherit*/
+}
+
+/*Learn Custom Attributes with Examples*/
+/*
+    katkteb data-hna <= hna katkteb ay simya bghit
+*/
+
+/*Learn The Difference Between ID and Class*/
+/*
+    ID : identifier | for js | unique | 
+    class : classified | for css | not unique | 
+*/

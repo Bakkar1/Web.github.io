@@ -1,0 +1,175 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    font-family: "Open sans", "sans-srief";
+    font-size: 18px;
+    text-align: center;
+    height: 4000px;
+}
+.conatiner{
+    margin: 20px auto;
+    width: 1200px;
+}
+/* Change Website Colors & Save With Local Storage*/
+
+article.color ul.color-switcher{
+    list-style: none;
+    margin-bottom: 20px;
+    text-align: center;
+}
+article.color ul.color-switcher li{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: all .5s ease-in-out;
+}
+article.color ul.color-switcher li:first-child{
+    background-color: red;
+    box-shadow: 0 0 0 0 red;
+}
+article.color ul.color-switcher li:first-child:hover{
+    box-shadow: 0 0 0 10px red;
+}
+article.color ul.color-switcher li:nth-child(2){
+    background-color: green;
+    box-shadow: 0 0 0 0 green;
+}
+article.color ul.color-switcher li:nth-child(2):hover{
+    box-shadow: 0 0 0 10px green;
+}
+article.color ul.color-switcher li:nth-child(3){
+    background-color: purple;
+    box-shadow: 0 0 0 0 purple;
+}
+article.color ul.color-switcher li:nth-child(3):hover{
+    box-shadow: 0 0 0 10px purple;
+}
+article.color ul.color-switcher li:nth-child(4){
+    background-color: black;
+    box-shadow: 0 0 0 0 black;
+}
+article.color ul.color-switcher li:nth-child(4):hover{
+    box-shadow: 0 0 0 10px black;
+}
+.red article.color h3{
+    color: #c0392b;
+}
+.red article.color section{
+    background-color: #c0392b;
+    padding: 20px;
+    color: #FFFF;
+}
+.green article.color h3{
+    color: green;
+}
+.green article.color section{
+    background-color: green;
+    padding: 20px;
+    color: #FFFF;
+}
+.purple article.color h3{
+    color: purple;
+}
+.purple article.color section{
+    background-color: purple;
+    padding: 20px;
+    color: #FFFF;
+}
+.black article.color h3{
+    color: black;
+}
+.black article.color section{
+    background-color: black;
+    padding: 20px;
+    color: #FFFF;
+}
+
+/*Calculate Textarea Characters With On-Input Event*/
+.mySapn{
+    display: block;
+    padding: 5px;
+    border-radius: 15px;
+    height: 30px;
+    width: 50px;
+    margin: 5px auto;
+    background-color: green;
+}
+.zero{
+    background-color: red;
+}
+.safe{
+    background-color: royalblue;
+}
+
+/*Hide Placeholder On Input Focus*/
+form{
+    margin-top: 50px;
+}
+form input{
+    text-transform: capitalize;
+}
+
+/*write effect*/
+.myEf{
+    background-color: hotpink;
+    color: #FFFF;
+    width: fit-content;
+    border-radius: 15px;
+    margin: 10px auto;
+    padding: 10px 20px;
+}
+
+i{
+    cursor: pointer;
+}
+
+/*Scroll To Top Button*/
+.goup{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: none;
+    font-size: 20px;
+    margin: 20px;
+    color:red;
+    cursor: pointer;
+}
+
+/*swipUp*/
+
+.swipUp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    perspective: 300px;
+}
+.swipUp:hover .swip-parent{
+    transform: rotateY(180deg);
+}
+.swipUp .swip-parent{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    transform-style: preserve-3d;
+    transition: 2s;
+    perspective: 300px;
+}
+.swipUp .swip-parent i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    backface-visibility: hidden;
+}
+.swipUp .swip-parent i:last-child{
+    transform: rotateX(180deg);
+}

@@ -1,0 +1,72 @@
+/*===========================================================================*/
+/*Transition - Intro*/
+/*
+    transition: property duration timingFunction delay
+
+    property : with ,height ,'background color' .... all
+
+
+*/
+
+.transition div{
+    width: 200px;
+    height: 100px;
+    background-color: aqua;
+    /* transition: width 3s, background-color 1s; */
+}
+
+.transition div:hover{
+    width: 500px;
+    background-color: coral;
+}
+
+/* transition: property duration  */
+.transition div{
+    transition-property: width,background-color;
+    /* default value all : kolchi */
+    transition-duration: 3s,1s; /*default 0s /0ms*/
+}
+
+
+/* ============================================================== */
+/* Timing Function 
+    transition-timing-function: steps(number,end/start) by default end bla smooth
+    start m3a ybda step ybadal animation
+
+    transition-timing-function: cubic-bezier(0,0,0,0);
+    http://www.css3beziercurve.net/
+    cubic-bezier nta tgad m3adala dyal transition
+
+    Delay : hwa ta2khir lwa9t li katakhar bih element bach ybda transiton
+*/
+.timingfun{
+    width: 1000px;
+    color: white;
+}
+.timingfun p{
+    background-color: #F00;
+    margin-bottom: 10px;
+    width: 120px;
+    padding: 20px;
+    transition-property: width;
+    transition-duration: 3s;
+    transition-delay: 1s;
+}
+.timingfun:hover p{
+    width: 200px;
+}
+.timingfun p:first-of-type{
+    transition-timing-function: ease; /*kaybda wysali tadrjiyan smooth*/
+}
+.timingfun p:nth-of-type(2){
+    transition-timing-function: linear; /*kaybda wysali fnafs la7da wkaymchi bmo3adal tabit*/
+}
+.timingfun p:nth-of-type(3){
+    transition-timing-function: ease-in; /*kaybda smouth wfach ywsal end ywgf fnafs la7da*/
+}
+.timingfun p:nth-of-type(4){
+    transition-timing-function: ease-out; /*kaybda fnafs la7da wysali tdrijiyan smoth*/
+}
+.timingfun p:last-of-type{
+    transition-timing-function: ease-in-out;/*kaybda wysali smoth*/
+}

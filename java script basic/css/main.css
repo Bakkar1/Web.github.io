@@ -1,0 +1,32 @@
+#test
+{
+    background-color:red;
+    color:white;
+    width:fit-content
+}
+#art1
+{
+    background-color:rgb(116, 99, 100);
+    color:#F88;
+    width:fit-content;
+    
+}
+button
+{
+    cursor: pointer;
+}
+
+:root
+{
+    --border-color: #F88;
+}
+section.sec1
+{
+    width: 300px;
+    background-color: #F88;
+}
+article.onchange
+{
+    margin: 30px;
+    
+}

@@ -1,0 +1,17 @@
+
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.purple{
+    background-color: purple;
+}
+.size{
+    font-size: 30px;
+}
+button{
+    height : 30px;
+    width: 50px;
+}

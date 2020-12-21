@@ -1,0 +1,124 @@
+body
+{
+    margin: 0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container .box
+{
+    position: relative;
+    width:350px;
+    padding:40px;
+    background-color: #FFF;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1) ;
+    border-radius: 4px;
+    margin: 20px;
+    box-sizing: border-box;/*bach mayfotch width li m7adad*/
+    overflow: hidden;
+    text-align: center;
+}
+.container .box .icone
+{
+    position: relative;
+    width: 80px;
+    height:80px;
+    color:#FFF;
+    background-color: #000;
+    display: flex;/*bach t9der tkhdem b justify content w align*/
+    justify-content: center; /*kaykhalih f center walakin horizontal*/
+    align-items: center;/*kaykhalih f center walakin vertical*/
+    margin:0 auto;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 1s;
+}
+.container .box:nth-child(1) .icone /* kadir hover l box wmn wraha icone bach yabda mn icone*/
+{
+    box-shadow: 0 0 0 0 #e95e63;
+    background-color: #e95e63;
+
+}
+.container .box:nth-child(1):hover .icone
+{
+    box-shadow: 0 0 0 400px #e95e63;
+}
+.container .box:nth-child(2) .icone
+{
+    box-shadow: 0 0 0 0 #23e629;
+    background-color: #23e629;
+
+}
+.container .box:nth-child(2):hover .icone
+{
+    box-shadow: 0 0 0 400px #23e629;
+}
+.container .box:nth-child(3) .icone
+{
+    box-shadow: 0 0 0 0 #2196f3;
+    background-color: #2196f3;
+
+}
+.container .box:nth-child(3):hover .icone
+{
+    box-shadow: 0 0 0 400px #2196f3;
+}
+.container .box .content
+{
+    z-index: 1;
+    position: relative;
+    transition: 0.5s;
+}
+.container .box:hover 
+{
+    color: #FFF;
+}
+.container .box .content h2
+{
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0;
+}
+.container .box .content p 
+{
+    padding: 0;
+    margin: 0;
+}
+.container .box .content a
+{
+    overflow: hidden;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFF;
+    border-radius:10px ;
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+    margin-top: 20px;
+}
+.clear
+{
+    clear: both;
+}
+article
+{
+    overflow: hidden;
+}
+article .box i /* kadir hover l box wmn wraha icone bach yabda mn icone*/
+{
+    box-shadow: 0 0 0 0 #e95e63;
+
+}
+article .box:hover i
+{
+    box-shadow: 0 0 0 400px #e95e63;
+}

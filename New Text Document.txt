@@ -1,0 +1,3 @@
+Binnen Data werken we met Oracle en SQL Server
+C# WPF applicatie verbinden we met sql server via ADO.Net
+enkel Vue.js hebben we gebruikt

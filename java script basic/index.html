@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meata charset="utf-8">
+        <meta name="description" content="javascript">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/test1.js"></script>
+        <script>
+            //onload, onclick, ondblclick
+            //onload mn ba3d mat dir load l page khadam l function
+            window.onload = function ()
+            {
+                document.getElementById("event1").innerHTML = "hello"; 
+                document.getElementById("p1").innerHTML = "how much you click ?";
+            }
+        </script>
+    </head>
+    <body>
+        <p>welkom to java script</p>
+        <div id="test"></div>
+        <div id="price"></div>
+        <div id="product1"></div>
+        <div id="product2"></div>
+        <div id="product3"></div>
+        <article id="art1"></article>
+        <article id="art2"></article>
+        <section id="s1"></section>
+        <div id="op">
+            <p>operator</p>
+        </div>
+        <button onclick="sayhello()">welkome</button>
+        <br>
+        <div id="inp">10</div>
+        <br>
+        <article id="funpr"></article>
+        <br>
+        <from>
+            <input type="text" id="dollar" placeholder="usd to euro">
+            <button onclick="converUsdToEuro()">convert</button>
+            <span id="messeg"></span>
+        </from>
+        <br>
+        <br>
+        <div id="event1">hoi</div>
+        <button id="chme" onclick="changeMeclick()" ondblclick="changeMedubleclick()">click</button>
+        <p id="p1" onload="ponload()"></p>
+        <br/>
+        <br/>
+        <input  id="input1" type="text" name="Name">
+        <div id="div1"></div>
+        
+
+        <section id="sec1" class="sec1">onmouse</section>
+        <article class="onchange">
+            <input type="text" id="oninput">
+            <span>convert to :</span>
+            <select id="currency">
+                <option id="ali">convert to</option>
+                <option name="Dollar" value="5">Dollar</option> <!--value hna 3tit value l dollar = 5 dirham-->
+                <option name="Yin" value="3">Yin</option>
+                <option name ="Pound"value="10">Pound</option>
+            </select>
+            <section id="onsec"></section>
+        </article>
+        <div id="all">
+
+        </div>
+        <div id="special"></div>
+
+
+        <!--hadi a7san blasa t7et fiha script dyal js-->
+        <!--7it hna kaykhli lpage dir uplod 3ad ykhdem js-->
+        <script src="js/testj.js"></script>
+        <script src="js/function.js"></script>
+        <script src="js/scopevent.js"></script>
+        <script src="js/events.js"></script>
+        <script src="js/arrays.js"></script>
+        <script src="js/string.js"></script>
+        <script src="js/loop.js"></script>
+        <script src="js/math.js"></script>
+        <script src= "js/regular.js"></script>
+        <script src="js/date.js"></script>
+        <script src="js/numberIn.js"></script>
+    </body>
+</html>

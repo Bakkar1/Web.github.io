@@ -1,0 +1,155 @@
+body
+{
+    background: none no-repeat scroll #F7F7F7;
+    margin-left:4%;
+}
+.one div
+{
+    font-weight:normal;
+    float:left;
+    margin:20px 20px 60px 20px;
+    font-size:25px;
+}
+.one .mail
+{
+    float:right
+}
+.myfood
+{
+    padding-left:45%
+}
+
+.clear
+{
+    clear:both;
+    margin:0;
+    padding:0; 
+}
+.two img , .drie img
+{
+   width:270px;
+   height:400px;
+   float:left;
+   margin:10px;
+   margin-bottom:0px
+}
+.twotext div, .drietext div
+{
+    float:left;
+    width:250px;
+    margin:10px;
+    margin-top:0;
+    text-align:center;
+    width:270px;
+}
+.twotext div .p1, .drietext div .p1
+{
+    text-transform:capitalize;
+    font-size:25px;
+    line-height:35px;
+    margin-bottom:0;
+    margin:10px
+}
+.twotext div p2, .drietext div .p2
+{
+    font-size:15px;
+    line-height:20px;
+}
+.link a
+{
+    width:30px;
+    height:30px;
+    float:left;
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+*.link a:hover
+{
+    background-color:black;
+    color:#FFFFFF;
+    text-align:center;
+    width:30px;
+    height:30px;
+    
+}
+.link
+{
+    margin:50px 500px
+}
+hr
+{
+   margin:5px;
+}
+.hr1
+{
+    margin:50px 40px
+}
+.vier
+{
+    text-align:center;
+}
+.vier .me
+{
+    font-size:20px;
+    margin-bottom:40px
+}
+.iam
+{
+    font-weight:bold;
+    font-size:20px
+}
+.vier hr
+{
+    margin-top:80px
+}
+.dertig ,.twintig , .tien
+{
+    float:left;
+}
+.vijf img
+{
+    width:60px;
+    height:60px;
+}
+.tien
+{
+    width:360px
+}
+.twintig
+{
+    width:400px;
+}
+.dertig
+{
+    width:400px;
+}
+.max
+{
+    float:left;
+    margin:0px;
+}
+.max img
+{
+   margin:15px
+}
+.vijf
+{
+   margin-bottom:200px
+}
+.vijf ol li
+{
+    list-style:none;
+    display:inline;
+    background-color:#686464;
+    color:#FFFFFF;
+    line-height:40px;
+    padding:5px;
+    font-size:11px;
+    padding:3px 7px
+}
+.vijf ol .title
+{
+   font-size:15px;
+   background: none no-repeat scroll #000
+}

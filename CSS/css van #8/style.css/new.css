@@ -1,0 +1,341 @@
+/*link*/
+.a1:hover /* ykhalik mn ba3d mat7t l muis fo9o tchof lmomiyizat li dert*/
+{
+    color:#314682;
+    font-weight:bold;
+    text-decoration:overline;
+}
+.a1:active /* man ba3d matkliki 3lih ybano lmomayizat*/
+{
+    color:#53ED58;
+    font-weight:normal;
+    text-decoration:none;
+}
+
+/* list */
+ul
+{
+    list-style-type:square ; /*hna t9der tkhtar symbol li ghaykon 9odam li*/
+    list-style-position:inside; /* difault value outside the li */
+    list-style-image:url(''); /*hier je kan steek de img dat je wil*/
+    /*alles in een*/
+    /*  list-style: type position images */
+    list-style: disc outside url('');
+}
+
+/* border */
+
+ul li
+{
+    border-width:4px;
+    border-style:solid;
+    border-color:#302323;
+    border-left:4px solid #302323; /*code lmukhtasar*/
+}
+
+.a1
+{
+    border-width:3px 4px 6px 8px; /* 3px=top 4px=right 6px=bottom 8px=left */
+    border-style:solid dashed ; /* top=solid right=dashed bottom=solid left=dashed reight+left=same.value top+bottom=same.value*/
+    border-color:#AF5B5B #080 #F00 #000;
+    text-align: center;
+    font-size:30px;
+    border-left:2px dashed #EF3B3B  /* top right bottom left */;
+    margin-left:30px
+}
+.p1
+{
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
+    border-width:2px 3px 0px 0px;
+    border-style:solid dashed none none;/* top right bottom left */
+    border-color:#AE81E2 #3A137F;/* top right bottom left */
+    
+}
+
+/* margin en padding */
+
+/* margin : hamich khariji*/
+/* padding : hamich dakhili*/
+.margin
+{
+    background:url('') no-repeat scroll #79E062;
+    text-align:center;
+    font-size:20px;
+    margin:50px 40px 60px; /*top right bottom left*/
+    margin-left:30px;
+    margin-right:0px;
+    color:#332C2C;
+    
+}
+.p2
+{
+    background-color:#F00;
+    width:400px;
+    margin:0px auto 10px auto ; /*auto bach tjibha in het midden*/ /*top right bottom left*/
+    padding:2px 3px 2px;/*top right bottom left*/
+    padding-left:8px  
+}
+
+
+/* Dimensions - Width / Height */
+
+button
+{
+    background-color:#DDD;
+    margin-left:550px;
+    margin-top:10px;
+    min-width:100px; /*minimum width li y9der yakhod wakha ykon 7arf wa7d fih l 3ard dyalo mayn9sech*/
+    max-width:200px; /* maximum width li y9der yakhod*/
+    /*height*/
+    min-height:50%;
+    max-height:60%
+}
+
+.divh
+{
+    height:50px;
+    background-color:#DDD
+}
+
+/*
+ Display - Inline / Block / None / Inline-Block ;
+ display:block ' kola wa7d fstar
+ display : inline 'fkhat wa7d
+ display:inline-block 'tdiro fstar wa7d walkin t9der t7et fih 3anasir l block
+ display:none 'tekhfih mn l page
+*/
+
+/* Position */
+.position
+{
+    height:100px;
+    background:none no-repeat scroll #DDD;
+}
+.fixed
+{
+    background-color:#080;
+    padding:8px;
+    margin:3px;
+    border-width:3px;
+    position:fixed;
+    /*top right bottom left*/
+    top:10px;
+    left:1000px
+}
+.relative
+{
+    background-color:#6161AA;
+    padding:8px;
+    margin:3px;
+    border-width:3px;
+    position:relative; /* kayt7ark mn blasto walakin blasto katb9a khawya*/
+    top:20px; 
+}
+/* Absolute*/
+.vader
+{
+    height:300px;
+    background-color:#00F;
+    color:red;
+}
+.boy
+{
+    height:250px;
+    background:#DDD;
+    width:600px;
+    position:static ; /*default value*/
+    position:relative /* hna ja child position absolute 7it hna fin L9a position relative yla mal9ahach ymchi bara had div*/
+}
+.child
+{
+    background:#A8A8B5;
+    position:absolute;
+    top:10px;
+    right:10px; 
+}
+
+/* Float */
+/*  Left, Right, None and Clear */
+.n
+{
+    background-color:#6C6E89;
+    border:10px;
+    padding:5px;
+    margin:5px;
+    width:300px;
+    float:left
+}
+.fl
+{
+    background-color:#6C6E89;
+    border:10px;
+    padding:5px;
+    margin:5px;
+    width:300px;
+    float:left
+}
+.fr
+{
+    background-color:#6C6E89;
+    border:10px;
+    padding:5px;
+    margin:5px;
+    width:300px;
+    float:right
+}
+.clear
+{
+    clear:both /* kay7ayd ta2tir dyal l floatbach maytkharba9ch lik style */
+    /* clear:right clear:left */
+}
+.h
+{
+    text-align:center
+}
+.pg
+{
+    background-color:#60E583;
+    border:10px;
+    padding:5px;
+    margin:5px;
+    width:300px;
+    float:right
+}
+/* clear:right /left /both*/
+/* float:none is de default value*/
+
+
+/* Grouping Similar Selectos */
+/* katjme3 grooup dyal class met p en h div .... wkatnas9hom mara wa7da*/
+.acht, .negen, .tien
+{
+    padding:10px;
+    border:5px;
+    width:300px;
+    float:left;
+    margin:50px 10px 50px 
+}
+.acht
+{
+    background:#00F;
+}
+.negen
+{
+    background:#DDD
+}
+.tien
+{
+    background:#080
+}
+
+/*Nesting and How it Work*/
+
+.container, .ander
+{
+    background:#DDD;
+    padding:10px;
+    margin:10px;
+    border:5px solid #080;
+    width:300px;
+    float:right
+}
+.container p
+{
+    font-size:10px;
+    color:#00F
+}
+/* haka n9dr nasa9 ghir l paragraph li fl container*/
+.ander p
+{
+    font-size:20px;
+    font-weight:bold
+}
+/* grouping en nesting*/
+.container p, .ander p
+{
+    font-size:20px;
+}
+
+
+/* Overflow - Visible, Hidden, Scroll, Auto */
+
+/* overflow:visible // default value*/
+/* overflow:hidden // dakchi li kharj mn div kaykhfih*/
+/*overflow:hidden katnfa3 m3a l float */
+.overflow h1
+{
+    text-align:center
+}
+.html, .pO
+{
+    background:#DDD;
+    width:300px;
+    height:200px;
+    margin:30px;
+    border:5px solid #00F;
+    padding:0px 20px;
+    float:left
+}
+.html
+{
+    overflow:scroll
+}
+.pO
+{
+    overflow:auto /*kaybayn lik scroll ghir yla kan lktba kharja mn l height of widh*/
+}
+
+/* Visibility - Visible, Hidden*/
+/* { visibility:visible;default value /// visibility:hidden ykhfih mn l pagr walkin tab9a blasto fl flowrok ; } */
+
+/* Z index - Auto, Number*/
+/* z-index:auto default value*/
+/* z-index:number ra9m lkbir ghayban hwa lawal*/
+.Z
+{
+    position:relative;
+    margin-left:400px;
+}
+.Z1, .Z2, .Z3
+{
+    width:100px;
+    height:100px;
+    padding:10px;
+    margin:10px;
+}
+.Z1
+{
+    background:#DDD;
+    color:#00F;
+    position:absolute;
+    top:20px;
+    left:20px;
+    z-index:3
+}
+.Z2
+{
+    background:rgb(163, 147, 147);
+    color:rgb(205, 29, 211);
+    position:absolute;
+    top:40px;
+    left:40px;
+    z-index:2
+}
+.Z3
+{
+    background:rgb(216, 180, 19);
+    color:rgba(20, 160, 118, 0.432);
+    position:absolute;
+    top:60px;
+    left:60px;
+    z-index:1
+}
+
+/*  Content - How to Add it to Elements  */
+.content:after /*er is ook div:before// haka t9der tzid content l page mn css*/
+{
+    content:" hallo ik ben van css";
+    color:#EF3B3B;
+    font-weight:bold;

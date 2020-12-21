@@ -1,0 +1,8 @@
+/*Create Simple Canvas*/
+canvas {
+    width: 800px;
+    height: 400px;
+    margin: 50px auto;
+    display: block;
+    border: 1px solid #CCC;
+}

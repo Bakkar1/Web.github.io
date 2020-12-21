@@ -1,0 +1,453 @@
+/*start global*/
+body{
+    font-family: sans-serif;
+    height: 3010px;
+}
+
+.visibale-xs, /*hadak elemnt ghaykon mkhfi fga3 lmedia ila l media li khtaritha lih ghayban fiha*/
+.visibale-sm,
+.visibale-md,
+.visibale-lg
+{
+    display: none;
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.resp-paragraph{
+    line-height: 1.8;
+}
+/*end global*/
+/*start framework*/
+.text-center
+{
+    text-align: center;
+}
+.overly
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.container
+{
+    margin: auto;
+}
+.clearFix
+{
+    clear: both;
+}
+.float-left
+{
+    float: left;
+}
+.float-right
+{
+    float: right;
+}
+/*
+     Create Heading Class
+     7it maymknch ykon 3andk ktar m h1 fl page
+     hadakchi 3alch kadir class h1 wt3tih khawas h1
+*/
+.h1{
+    font-size: 2em;
+}
+.h2{
+    font-size: 1.5em;
+}
+.responsive-image{
+    width: 100%;
+}
+
+.classic-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/*end framework*/
+
+/*================================================================*/
+
+/*start header*/
+header
+{
+    background-image: url('../images/contactback.jpg');
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+header div.overly
+{
+    background-color: rgba( 0, 188, 255, .7);
+}
+header div.overly h1
+{
+    font-size: 60px;
+    margin-top: 100px;
+}
+header div.overly section
+{
+    border: 2px solid #FFF;
+    font-size: 24px;
+    width: 48%;
+    padding: 20px;
+    margin: 0 1%;
+}
+header div.overly section:active
+{
+    border: 2px solid orange;
+}
+
+header div.overly div.order
+{
+    border: 2px solid #FFF;
+    font-size: 24px;
+    padding: 20px;
+    margin: 30px 1% 0;
+}
+@media( max-width: 767px)
+{
+    header div.overly section
+    {
+        float: none;
+        margin: 0px auto 20px;
+        font-size: 20px;
+        width: fit-content;
+    }
+}
+@media (max-width : 400px) /*costum media*/
+{
+    header div.overly h1
+    {
+        margin-top: 20px !important; /*7it style li fl class 9wa mn l media hadakch 3lach khask T7et important*/
+        font-size: 50px !important;
+    }
+    header div.overly section
+    {
+        float: none;
+        margin: 0px auto 20px;
+        font-size: 20px;
+        width: fit-content;
+    }
+}
+/*end header*/
+/*=========================================*/
+/* start features*/
+article.features
+{
+    padding: 20px 0;
+    overflow: auto;
+    background-color: #555;
+}
+article.features  .h1{
+    color: #FFF;
+    margin-bottom: 50px;
+}
+article.features section{
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    border-radius: 15px;
+    overflow: hidden;
+    height: fit-content;
+}
+article.features section:hover
+{
+    transform: translateY(-10px);
+}
+article.features section:hover h2
+{
+    box-shadow: 0 0 0 200px #800;
+}
+article.features section:hover p
+{
+    color: #FFF;
+    transform: translateY(0px);
+    transition: all 1s ease-in-out;
+}
+article.features section:hover p::first-letter
+{
+    color: black
+}
+article.features section h2
+{
+    margin: 10px auto;
+    text-transform: capitalize;
+    border: 1px solid #800;
+    width: 100px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 5px;  
+    box-shadow: 0 0 0 0 #800;
+    transition: all .3s ease-in-out;
+}
+article.features section p
+{
+
+}
+article.features section p::first-letter
+{
+    text-transform: capitalize;
+    color: #800;
+    font-size: 20px;
+}
+
+
+@media ( max-width : 767px){
+    article.features section{
+        width: 50%;
+        margin:0 25%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    article.features section:hover p{
+        transform: translateY(0px);
+    }
+    article.features section p{
+        transform: translateY(70px);
+    }
+}
+@media (min-width : 768px) and (max-width: 991px){
+    article.features section:first-of-type,
+    article.features section:nth-of-type(2){
+        width: 50%;
+    }
+    article.features section:last-of-type{
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    article.features section p{
+        transform: translateY(50px);
+    }
+    article.features section:hover p{
+        transform: translateY(0px);
+    }
+}
+@media (min-width : 992px){
+    article.features section{
+        width: 33.33333%;
+        height: 135px;
+    }
+    article.features section p{
+        transform: translateY(70px);
+    }
+    article.features section:hover p{
+        transform: translateY(0px);
+    }
+}
+@media (min-width : 1200px){
+
+} 
+/*end features*/
+/*start about us*/
+/*end about us*/
+article.aboutUs{
+    background-color: #ececec;
+    padding: 30px 0;
+}
+article.aboutUs h2{
+    font-size: 50px;
+    margin: auto
+}
+article.aboutUs p.resp-paragraph{
+    color: #848484;
+    font-size: 22px;
+}
+@media ( max-width : 767px) and (min-width : 200px){
+    article.aboutUs p.resp-paragraph::first-letter{
+        color: rgb(241, 167, 98);
+        font-size: 24px;
+    }
+}
+
+/* start our works */
+.our-works{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.our-works .image img{
+    cursor: pointer;
+}
+.container-img{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .6);
+}
+.container-img img{
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+}
+@media ( max-width : 767px) and (min-width : 200px) /*hadchi ghaytab9 3la ay chacha l width dyalha makyfot 767px*/
+{
+    .our-works .image{
+        width: 100%;
+    }
+}
+@media (min-width : 768px)
+{
+    .our-works .image{
+        width: calc(100% / 2);
+    }
+}
+@media (min-width : 992px)
+{
+    .our-works .image{
+        width: calc(100% / 3);
+    }
+}
+
+@media (min-width : 1200px)
+{
+    .our-works .image{
+        width: calc(100% / 4);
+    }
+}
+/* end our works */
+/* start pricing table */
+
+.pricing-table{
+    background-color: #444;
+    color: #FFF;
+    padding: 50px 0;
+}
+.pricing-table h2{
+    margin: 0 0 20px;
+    font-size: 50;
+}
+.pricing-table > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pricing-table .pricing-plan{
+    width: calc(100% / 3);
+    min-width: calc(770px / 3);
+    border: 3px solid #FFF;
+    padding: 20px 0;
+}
+.pricing-table .pricing-plan h3{
+    margin: 0 0 10px;
+    font-size: 26px;
+}
+.pricing-table .pricing-plan span{
+    margin: 0 0 10px;
+    font-size: 26px;
+    display: inline-block;
+    color: #bfbfbf;
+}
+.pricing-table .pricing-plan ul{
+    line-height: 2;
+    font-size: 18px;
+}
+@media (min-width : 768px){
+    .pricing-table .pricing-plan:first-child{
+        order: 2;
+    }
+    .pricing-table .pricing-plan:nth-child(2){
+        order: 1;
+    }
+    .pricing-table .pricing-plan:nth-child(3){
+        order: 3;
+    }
+}
+/* end pricing table  */
+/*=============================================================================================================*/
+/*
+    The Bootstrap grid system has four classes:
+        xs (for phones - screens less than 767px wide)
+        sm (for tablets - screens equal to or greater than 768px wide)
+        md (for small laptops - screens equal to or greater than 992px wide)
+        lg (for laptops and desktops - screens equal to or greater than 1200px wide)
+    lmedia t9der tkararha gedach ma bghit
+    / xtrl + h => find and replace/
+*/
+@media ( max-width : 767px) and (min-width : 200px) /*hadchi ghaytab9 3la ay chacha l width dyalha makyfot 767px*/
+{
+    .visibale-xs
+    {
+        display: block !important;
+    }
+    .hidden-xs /*hadak elemnt ghaytkhfa fhad l media wyban fl media lokhrin*/
+    {
+        display: none !important;
+    }
+    .resp-paragraph{
+        text-align: center;
+        font-size: 18px !important;
+        margin: 5px 20px !important;
+    }
+}
+@media (min-width : 768px)
+{
+    .container
+    {
+        width: 780px;
+    }
+    .visibale-sm
+    {
+        display: block !important;
+    }
+    .hidden-sm
+    {
+        display: none !important;
+    }
+    .resp-paragraph{
+        text-align: center;
+        font-size: 20px !important;
+        margin: 5px 20px;
+        color: red !important;
+    }
+}
+@media (min-width : 992px)
+{
+    .container
+    {
+        width: 1000px;
+    }
+    .visibale-md
+    {
+        display: block !important;
+    }
+    .hidden-md
+    {
+        display: none !important;
+    }
+    .resp-paragraph{
+        font-size: 22px !important;
+        color: blue !important;
+    }
+}
+
+@media (min-width : 1200px)
+{
+    .container
+    {
+        width: 1200px;
+    }
+    .visibale-lg
+    {
+        display: block !important;
+    }
+    .hidden-lg
+    {
+        display: none !important;
+    }
+    .resp-paragraph{
+        font-size: 24px !important;
+        color: orange !important;
+    }
+}

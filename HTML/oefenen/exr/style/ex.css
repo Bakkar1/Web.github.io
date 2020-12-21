@@ -1,0 +1,14 @@
+body
+{
+   background-image:url('img/img.png')
+   
+}
+fieldset
+{
+   background-color:white;
+}
+.input1
+{
+   display:block;
+   background-color:#C0C4C4
+}

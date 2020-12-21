@@ -1,0 +1,1 @@
+//document.write("<p>hello from external test1 js file</p>")

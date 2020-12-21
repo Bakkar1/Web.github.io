@@ -1,0 +1,189 @@
+/*start global*/
+*
+{
+    margin:0;
+    padding:0;
+    /*bach fach tkhdem bl float maytkharba9ch lik site*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+body
+{
+    font-family: Arial, Tahoma, Geneva, Verdana, sans-serif
+}
+ul
+{
+    list-style:none;
+}
+.clearfix
+{
+    clear:both;
+}
+/*end global*/
+
+/*start header*/
+body > header 
+{
+    background-color:#333;
+    color:#DDD;
+    padding:20px;
+    text-align:center
+} 
+/*end header*/
+/*satr nav*/
+nav
+{
+    background-color:#DDD;
+}
+nav ul 
+{
+    padding:20px;
+    text-align:center
+}
+nav ul li 
+{
+    display:inline-block
+}
+nav ul li:after
+{
+    content:" |"
+}
+nav ul li:last-child:after
+{
+    content:"" /*bach y7ayd | mn li lakhra */
+}
+/*end nav*/
+/*start main*/
+main
+{
+    background-color:#EEE;
+    padding:20px
+}
+main p
+{
+    text-align:center;
+}
+main p span
+{
+    font-weight:bold;
+    color:#666;
+    text-transform:uppercase
+}
+/*end main*/
+/*start articels*/
+.post
+{
+    width:60%;
+    float:left;
+}
+.post article
+{
+    background-color:#F6F6F6;
+    border : 1px solid #CCC;
+    margin:20px 10px;
+    overflow: hidden;
+}
+.post article header
+{
+    background-color:#E2E2E2;
+    padding:10px
+}
+.post article header h3 mark
+{
+    background-color:#00F;
+    color:white
+}
+.post article section
+{
+    padding:10px
+}
+.post article section details
+{
+    margin:10px 0;
+}
+.post article section figure
+{
+    margin:5px;
+    text-align:center
+}
+.post article section figure figcaption
+{
+    border-bottom:1px solid #000;
+    max-width:50%;
+}
+.post article section figure code
+{
+    background-color: #DDD;
+    border: 1px solid #00F;
+    margin: 5px;
+    padding: 10px;
+    display: block;
+    max-width:300px;
+    text-align:center;
+}
+.post article section figure img
+{
+    margin:10px 0
+}
+.post article section figure .cap
+{
+    border:none
+}
+.post article section form.costumerinfo input
+{
+    display:block;
+    margin-bottom:10px
+}
+/*end articels*/
+/*start sidebar*/
+aside
+{
+    width:30%;
+    float:left;
+}
+aside section
+{
+    background-color:#EEE;
+    margin:20px auto;
+    padding:10px;
+    border:1px solid #CCC;
+    margin-bottom:20px;
+}
+aside section h3
+{
+    background-color:#D1D1D1;
+    padding:5px;
+    text-align:center;
+    margin-bottom:10px;
+}
+aside section ul
+{
+    padding:10px;
+}
+aside section ul li
+{
+    line-height:1.6;
+}
+
+/*end sidebar*/
+/*start footer*/
+footer
+{
+    background-color:#333;
+    color:#DDD;
+    padding:10px;
+    text-align:center
+}
+/*end footer*/
+footer div.before ul li::after
+{
+    content:"*";
+    color:red;
+    margin-left: 10px;
+}
+footer div.before ul li::before
+{
+
+}
