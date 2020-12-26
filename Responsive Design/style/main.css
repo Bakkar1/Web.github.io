@@ -365,6 +365,39 @@ article.aboutUs p.resp-paragraph{
     }
 }
 /* end pricing table  */
+/* start testimonial */
+.they{
+    padding: 50px 0;
+
+}
+.they h2{
+    font-size: 50px;
+    margin: 0 0 30;
+    color: #777;
+    
+}
+.they > div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.they .person{
+    background-color: #eee;
+    padding: 2px;
+    margin: 0 0 20px;
+    border: 1px solid #DDD; 
+    width: calc(100% / 3);
+}
+.they .person:first-of-type{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.they .person{
+    width: 50%;
+}
+/* end testimonial */
+
+
 /*=============================================================================================================*/
 /*
     The Bootstrap grid system has four classes:

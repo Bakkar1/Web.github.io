@@ -17,7 +17,9 @@
     --ms-border-radius: ; // internet explorer 
 
 */
-
+:root{
+    --elzeto-color : #3497db;
+}
 body
 {
     height: 4900px

@@ -173,3 +173,12 @@ i{
 .swipUp .swip-parent i:last-child{
     transform: rotateX(180deg);
 }
+
+
+
+#imageEveryX{
+    height: 400px;
+    width: 200px;
+    transition: all .5s ease-in-out;
+    background-color: #c0392b;
+}

@@ -218,3 +218,63 @@ var myParentElement = document.getElementById('parentElement'),
 myparentelButton.onclick = function(){
     this.parentElement.style.display = "none";
 }
+
+//=============================
+/*
+    Next, Previous Sibling 
+    sibling : cha9i9
+*/
+var mainSibling = document.querySelector('.sibling');
+
+console.log(mainSibling.childNodes[1].nextSibling);
+console.log(mainSibling.childNodes[1].nextElementSibling);
+
+console.log(mainSibling.childNodes[3].previousSibling);
+console.log(mainSibling.childNodes[3].previousElementSibling);
+
+//=============================================
+/*
+    Focus 
+    input.focus(); add focus
+    onfocus = function
+
+    input.blur(); remove focus
+    Blur
+    onblur = function..
+*/
+
+var myForme = document.getElementById('focus');
+myForme.onfocus = function(){
+    this.style.backgroundColor = "red";
+}
+myForme.onblur = function(){
+    this.style.backgroundColor = "white";
+}
+//=============================================
+//Click
+
+var clickEl = document.querySelector('.click');
+
+clickEl.firstElementChild.onclick = function(){
+    clickEl.style.display = 'none';
+}
+/*
+    click kaydir click bo7do
+
+    seTimeout katnafad l functie mn ba3d XXXXmili second
+*/
+window.addEventListener("load",function(){
+    setTimeout(function(){
+        clickEl.firstElementChild.click();
+    }, 2000);
+}); 
+
+// Add Event Listenerµ
+/*
+    elm.addEventListener('event',function(){});
+
+    kaykhalik t9der dir nafs l event 3la wa7d l3onsor bzaaf lmarat
+
+    window.removeEventListener('event',function name);
+*/
+

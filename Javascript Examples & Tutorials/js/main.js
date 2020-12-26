@@ -271,3 +271,57 @@ txtarTwit.onkeydown = function(){
         twitSpan.style.color = '#000';
     }
 }
+
+//==================================================
+//Show Random Image Every X Second
+var imageEveryX = document.getElementById('imageEveryX');
+
+//my way
+var backColor = ["#F00","#00F","#000","#DDD"];
+
+function reapetRnd(elm,reapetE){
+    setInterval(function(){
+        var rnd = Math.floor(Math.random() * reapetE.length);
+        elm.style.backgroundColor = reapetE[rnd];
+    }, 500);
+}
+function reapetClasic(elm,reapetE){
+    var i = 0;
+    setInterval(function(){
+        elm.style.backgroundColor = reapetE[i];
+        i++;
+        if(i == reapetE.length){
+            i = 0;
+        }
+    }, 1000);
+}
+
+// reapetRnd(imageEveryX,backColor);
+reapetClasic(imageEveryX,backColor);
+
+//================================
+//Check If Url Hash Contains String
+/*
+    hash hwa lklam li mn ba3d #
+    http://127.0.0.1:5500/examplesJs.html#image
+    hash = image
+*/
+
+
+if(window.location.hash){
+    console.log("goed er is hach")
+    //method 1
+    // index(0) = #
+    if(window.location.hash.indexOf("osama") === 1){
+        console.log("hash osama is fond");
+    }
+
+    //method 2
+    var hash = window.location.hash.substring(1);
+    if(hash == "mk"){
+        console.log("hash mk is fond");
+    }
+}
+else{
+    console.log("niet goed er is geen hach")
+}
