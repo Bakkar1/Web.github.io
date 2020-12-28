@@ -275,6 +275,32 @@ window.addEventListener("load",function(){
 
     kaykhalik t9der dir nafs l event 3la wa7d l3onsor bzaaf lmarat
 
-    window.removeEventListener('event',function name);
+    elm.removeEventListener('event',function name);
 */
 
+//+=====================
+// Contains
+var myContain = document.querySelector('.elmCon');
+    myContainChild = myContain.firstElementChild.firstElementChild.firstElementChild;
+if(myContain.contains(myContainChild)){
+    console.log("elmCon is contain mycontainChild");
+}
+
+//=================
+//Client [ Height, Width ]
+/*
+    client height : viewable area px
+                    include padding
+                    no border
+                    no margin
+                    no scroll
+                    
+    client width : viewable area px
+                    include padding
+                    no border
+                    no margin
+                    no scroll
+*/
+
+console.log(document.querySelector('.client').clientHeight);
+console.log(document.querySelector('.client').clientWidth);

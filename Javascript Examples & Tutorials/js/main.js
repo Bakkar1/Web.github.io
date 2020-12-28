@@ -325,3 +325,12 @@ if(window.location.hash){
 else{
     console.log("niet goed er is geen hach")
 }
+
+//================================================
+//Redirect to url
+var myRedirect = document.querySelector('.redirect');
+function redirectMe(url){
+    if(url !== null){
+        window.location = url;
+    }
+}
