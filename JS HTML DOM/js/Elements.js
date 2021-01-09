@@ -304,3 +304,73 @@ if(myContain.contains(myContainChild)){
 
 console.log(document.querySelector('.client').clientHeight);
 console.log(document.querySelector('.client').clientWidth);
+
+//=====================================================
+//Scroll [ Height, Width ]
+/*
+    scroll height/width : 
+        all area px
+        include invisible area
+        include padding
+        no scroll
+        no border
+        no margin
+*/
+
+var myScroll = document.getElementById('scroll');
+
+console.log("scroll height width");
+console.log(myScroll.scrollHeight);
+console.log(myScroll.scrollWidth);
+
+
+//Offset [ Height, Width ]
+var myOffset = document.querySelector('.offset');
+
+/*
+    offsetHeight / offsetWidth: viewable area px
+                    include padding
+                    include border
+                    include scroll
+                    no margin
+*/
+console.log("offset height width");
+console.log(myOffset.offsetHeight);
+console.log(myOffset.offsetWidth);
+
+
+//====================================================
+// Scroll [ Top, Left ]
+var myScrollTopLeft = document.getElementById('scrollTopLeft');
+
+
+myScrollTopLeft.onclick = function(){
+    'use strict';
+    document.documentElement.scrollTop += 100;
+    //document.documentElement.scrollLeft += 100;
+    console.log(document.documentElement.scrollTop );
+    if(document.documentElement.scrollTop >= 1000){
+        this.classList.add('active');
+    }
+}
+
+console.log(myOffset)
+
+/*
+    Client [ Top, Left ] : katjib lik width dyal border bl px 
+    includ scroll
+*/
+console.log("client top left : border width in px");
+console.log(myScrollTopLeft.clientTop);
+console.log(myScrollTopLeft.clientLeft);
+
+/*
+    Style
+    kat9der tbadal f style dyal element b js
+
+    element.Style.Property = value
+*/
+
+myScrollTopLeft.style.backgroundColor = "#0F9";
+myScrollTopLeft.style.padding = "10px";
+

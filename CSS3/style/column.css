@@ -1,0 +1,67 @@
+/* Multi Columns  */
+
+/* Column Count, Column Gap */
+/* 
+    acolumn-count: auto; default value 
+    acolumn-count: 3la ch7AL mn colum bghit t9asam hadak element
+
+    column-gap: normal; defualt value gap ya3ni fajwa li binat l column bl px
+*/
+.clmCount{
+    column-count: 3;
+    column-gap: 10px;
+}
+
+/* 
+    Column Rule : hwa l border li binat l column
+    column-rule: medium none color; defualt value
+    
+    column-rule-width: ;
+    column-rule-style: ;
+    column-rule-color: ;
+
+    /
+
+    Column Width : minimum width dyal colum
+    column-width: auto; default value
+    
+    kaywali chwaya responsive
+*/
+
+.clmRule{
+    border: 1px solid #CCC;
+    padding: 10px;
+    margin: 10px;
+
+    column-count: 3;
+    column-gap: 10px;
+    
+    column-rule: 3px dotted #0ff;
+
+    column-width: 400px;
+}
+
+/*
+    Column Span : hwa hadak element ch7al mn column yakhod
+    column-span: 1; default value yakhod colum wa7ad
+    column-span: all; yakhod kolchi
+
+    column-fill: 9alab 3liha
+
+    Shorthand
+    columns : auto auto; default value
+    columns : width count;
+*/
+.clmSpan{
+    border: 1px solid #DDD;
+    padding: 10px;
+    margin: 10px;
+
+    column-gap: 10px;    
+    column-rule: 3px dotted #0ff;
+
+    columns: 400px 3;
+}
+.clmSpan h2{
+    column-span: all;
+}

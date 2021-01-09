@@ -1,4 +1,7 @@
-
+body{
+    overflow-x: auto;
+    height: 4000px;
+}
 .red{
     background-color: red;
 }
@@ -22,4 +25,51 @@ button{
     border: 10px solid #DDD;
     margin: 39px;
     overflow: scroll;
+}
+
+#scroll{
+    padding : 20px;
+    background-color: #EEE;
+    border: 10px solid #CCC;
+    margin: 30px;
+    overflow: scroll;
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    color: white;
+}
+
+#scroll div{
+    width: 800px;
+    height: 800px;
+}
+
+.offset{
+    padding : 20px;
+    background-color: #EEE;
+    border: 10px solid #CCC;
+    margin: 30px;
+    overflow: scroll;
+    width: 300px;
+    height: 300px;
+    background-color:rebeccapurple;
+    color: white;
+}
+.offset div{
+    width: 800px;
+    height: 800px;
+}
+
+.scrollTopLeft{
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #EEE;
+    color: #F00;
+    border: 2px solid #000;
+}
+.active{
+    background-color: #00F;
 }

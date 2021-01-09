@@ -1,0 +1,170 @@
+
+/* Animation - Intro & Keyframes */
+.introAnimation{
+    width: 100px;
+    height: 100px;
+    background-color: #F00;
+    transition: all 2s ease-in-out;
+    position: relative;
+    animation: moving 5s 10 linear;
+    animation-direction: normal;
+}
+/*
+    function
+    @keyframes name{
+    from{
+
+    }
+    to {
+        
+    }
+    //bach tkhadmo 3la chi element
+    elem{
+        animation: animationName duration interval  ;
+    }
+    interval : ch7al mn mara ghayt3awd
+}
+    
+*/
+@keyframes coloring{
+    from{
+        background-color: #F00;
+    }
+    to {
+        background-color: #00F;
+    }
+}
+@keyframes moving{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: 0;
+        left: 200px;
+        background-color: #00F;
+    }
+    50%{
+        top: 200px;
+        left: 200px;
+    }
+    75%{
+        top: 200px;
+        left: 0;
+        transform: rotateZ(90deg);
+        border-radius: 50%;
+    }
+    100%{
+        top: 0;
+        left: 0;
+        transform: rotateZ(180deg);
+    }
+}
+/* ============================ */
+/* Name, Duration 
+    animation-name: none; default value
+    name of keyframe
+
+    animation-duration: 0; s ms
+    
+    animation-iteration-count: 1; tikrar ch7al mn mara . default value 
+    animation-iteration-count: infinite;
+    
+    animation-direction: normal; default value . itijah animation
+    yabda mn lawal wysali flakhar
+    animation-direction: reverse; kaudir l3aks ybada mn lakhar wysali flawal
+
+    animation-direction: alternate; ybda mn wa7d wfach ywsal lakhor ybda mno 3awtani kaydir cicly
+    animation-direction: alternate-reverse;
+
+    animation-delay: 0s; takhir default value
+
+    animation-fill-mode: none; default value
+    animation-fill-mode: forwards; fach ysali animation yab9a 3la style dyal akhir frame 100%/to
+    animation-fill-mode: backwards; kaykhalih yakhod style dyal awal frame
+    9bal maykhdem animation 9bal kolchi
+
+    animation-fill-mode: both; yakhod style dyal awal frame 9bal kolchi
+    wfach ysali yw9af 3la style dyal akhir frame
+
+    animation-play-state: running; defualt value
+    animation-play-state: paused; katwa9af l animation
+
+    animation-timing-function: ease; default value
+
+    shorthand code : 
+    animation: none 0 ease 0 1 normal none running;  default value
+    animation: name duration timing-function delay iteration-count direction fill-mode plat-state
+*/
+.namedur{
+    width: 100px;
+    height: 100px;
+    margin: 300px 0 0;
+    top: 10px;
+    left: 10px;
+    background-color: blueviolet;
+    transition: all 2s ease-in-out;
+    position: relative;
+    animation-name: movingNM;
+    animation-duration: 2s;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+    animation-delay: 5s;
+    /* animation-fill-mode: forwards; */
+    /* animation-fill-mode: backwards; */
+    animation-fill-mode: running;
+    animation-timing-function: ease-in-out;
+    
+}
+/*
+    0%,100%{
+        top: 0;
+        left: 0;
+    }
+
+    keyframes : animmation name => required
+                from (0%) to (100%)
+                Css attribuite
+
+*/
+@keyframes movingNM{
+    0%{
+        top: 10px;
+        background-color: chartreuse;
+    }
+    20%{
+        top: 90px;
+    }
+    30%{
+        top: 60px;
+    }
+    40%{
+        top: 110px;
+    }
+    50%{
+        top: 80px;
+    }
+    60%{
+        top: 150px;
+    }
+    70%{
+        top: 120px;
+    }
+    80%{
+        top: 190px;
+    }
+    90%{
+        top: 160px;
+    }
+    100%{
+        top: 220px;
+        background-color: red;
+    }
+}
+
+/* Animation Outro */
+/*
+    https://coveloping.com/tools/css-animation-generator
+    https://animate.style/ : animation library
+    http://ianlunn.github.io/Hover/ : animation library
+*/

@@ -334,3 +334,18 @@ function redirectMe(url){
         window.location = url;
     }
 }
+
+
+//Generate Random Serial Number
+function generateSerial(){
+    var chars = "1234567890azertyuiopqsdfghjklmwxcvbnAZERTYUIOPQSDFGHJKLMWXCVBN",
+        serialLenght = 20,
+        randomSerial = '',
+        i;
+    for(i = 0 ; i < serialLenght; i++){
+        var rnd = Math.floor(Math.random() * chars.length -1);
+        // randomSerial += chars[rnd];
+        randomSerial += chars.substring(rnd,rnd + 1);
+    }
+    document.getElementById('serial').textContent = randomSerial.toString();
+}
