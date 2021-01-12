@@ -349,3 +349,30 @@ function generateSerial(){
     }
     document.getElementById('serial').textContent = randomSerial.toString();
 }
+
+//Clear Input Placeholder On Focus
+document.getElementById('myNaam').onfocus = function(){
+    this.placeholder = "" ;
+
+}
+document.getElementById('myNaam').onblur = function(){
+    this.placeholder = "naam";
+}
+
+
+// Create Countdown Timer
+var seconds = 3,
+    countDvi = document.getElementById('countDown');
+
+function secondPass(){
+    var minutes = Math.floor(seconds / 60);
+    var second = seconds % 60;
+    countDvi.textContent = minutes + ":" + second;
+    seconds--;
+    if(second <= 0){
+        clearInterval(countDwon);
+    }
+}
+countDwon = setInterval(function(){
+    secondPass();
+},1000)
