@@ -343,6 +343,7 @@ console.log(myOffset.offsetWidth);
 // Scroll [ Top, Left ]
 var myScrollTopLeft = document.getElementById('scrollTopLeft');
 
+myScrollTopLeft.style.display = "none";//7ayad hadi bach yban lik div
 
 myScrollTopLeft.onclick = function(){
     'use strict';

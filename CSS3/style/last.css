@@ -1,0 +1,49 @@
+/*last videos
+
+    font face
+    CSS Web Safe Fonts
+    https://www.w3schools.com/cssref/css_websafe_fonts.asp
+
+    us google font
+    https://fonts.google.com/?selection.family=Roboto:wght@100
+*/
+
+/* 
+    creating your own font is not a good idea
+
+    create my own font face: font family
+    fonts: TTF OTF WOFF WOFF2 SVG ...
+
+    @font-face{
+        font-family: name;
+        font-weight: ;
+        font-style: ;
+        src: url('path.tff') path : link or file location;
+        src: url('path.otf')...
+    }
+*/
+
+
+/* ================================== */
+/* 
+    bda dima bl mobile 
+    Media Queries
+    @media screen and  (min-with: 700px){
+
+    }
+
+    مواقع مهمة
+
+https://stackoverflow.com/questions/16443380/common-css-media-queries-break-points
+
+https://screensiz.es/phone
+
+https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+
+https://scotch.io/posts
+
+https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints/
+
+https://gist.github.com/hs0ucy/3762901
+
+*/

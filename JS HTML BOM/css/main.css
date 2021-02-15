@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    height: 3000px;
 }
 
 :root{
@@ -53,6 +54,17 @@ body{
     font-size: 1.5em;
 }
 
+
+#scrollBy{
+    position: fixed;
+    top: 100px;
+    left: 10px;
+}
+#scrollTo{
+    position: fixed;
+    top: 200px;
+    left: 10px;
+}
 /* start global media */
 @media ( max-width : 767px) and (min-width : 200px) /*hadchi ghaytab9 3la ay chacha l width dyalha makyfot 767px*/
 {

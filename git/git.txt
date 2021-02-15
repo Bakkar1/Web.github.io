@@ -1,0 +1,68 @@
+mkdir tzid malaf jdid
+touch ... :  katzid bih file
+dir : kat3eaf biha lmalaft li kaynin wes lfolder
+
+echo "your text" > fileName : bach tkteb west chi file
+
+git clone url
+
+git add : kadir biha stag lmalafat li t3adlet
+
+git reset head fileNAME // to unstage file
+
+git status 
+
+git commit -m "messeg"
+
+"git push" to publish your local commits
+
+git branch  :BACH t3raf lbranch
+
+git remote -v  : bach t3raf remote name
+
+git push remoteName branchName
+
+git pull remoteName
+
+==========
+git config -l : congigiration list 
+
+b q t9der tatla3 mn : end 
+
+git help config : ghadi ysiftak l web page fin kaynin kamla l config 
+
+git config --global configName : ghayib lik l value dyal configName
+
+git config --global configName "value" : bach dir set l value l configNames
+
+
+git config --show-origin
+
+
+git config --global -edit : bach tbadal configiration b GUI
+==========
+
+touch filename.js .. : create new  file
+//
+git config --global alias.name lamar 
+git config --global alias.st status : katkhtasar status f st
+git st
+
+======================================
+branch  & merg
+
+git branch
+
+git branch branchName : bach dir nieuw branch
+
+git checkout branchName : bach tmchi lhadak lbranch
+
+git branch -d branchName : delet a branch yla mafihach change 
+
+git branch -d branchName : delet a branch wakha fih change 
+
+git branch -m "branchName" :  to modifie Branch name
+
+git checkout -b branchName : dir nieuw branch w tmchi lih
+
+---------------------------------

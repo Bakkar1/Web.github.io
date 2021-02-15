@@ -1,0 +1,207 @@
+:root{
+    --main-color: #F00;
+}
+*{
+    box-sizing: border-box;
+}
+/* Create Custom Radio With Transform Animation */
+.z-radio{
+    margin: 20px;
+}
+.z-radio input{
+    appearance: none;
+}
+.z-radio input:checked + label::after{
+    transform: translateY(-50%) scale(1);
+}
+.z-radio label{
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+    font-weight: bold;
+    color:var(--main-color);
+}
+.z-radio label::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: var(--main-color);
+    border: 1px solid #5A5A5A;
+}
+.z-radio label::after{
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    background-color: #E91E63;
+    border: 1px solid #5A5A5A;
+    transform: translateY(-50%) scale(0);
+    transition: all .4s ease-in-out;
+}
+/* Create Custom check With Transform Animation */
+.chekboxs div input:checked + label::after{
+    /* transform: translateY(-50%) scale(1);
+    border-radius: 0; */
+    animation: rotat1 .4s 2 ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+}
+.chekboxs div {
+    margin-top: 20px;
+}
+.chekboxs div input{
+    appearance: none;/*kat7ayd moraba3 dyal checkbox */
+}
+.chekboxs div  label{
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+    font-weight: bold;
+    color:#555;
+}
+.chekboxs div  label::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: var(--main-color);
+    border: 1px solid #5A5A5A;
+}
+.chekboxs div  label::after{
+    content: "\f00c";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    width: 21px;
+    height: 21px;
+    text-align: center;
+    line-height: 21px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: #E91E63;
+    color: white;
+    transform: translateY(-50%) scale(0) rotate(0deg);
+    border-radius: 50%;
+    transition: all .4s ease-in-out;
+}
+@keyframes rotat{
+    0%{
+        transform: translateY(-50%) scale(0) rotate(0deg);
+        border-radius: 50%;
+    }
+    25%{
+        transform: translateY(-50%) scale(.25) rotate(120deg);
+        border-radius: 40%;
+    }
+    50%{
+        transform: translateY(-50%) scale(.5) rotate(240deg);
+        border-radius: 40%;
+    }
+    75%{
+        transform: translateY(-50%) scale(.75) rotate(160deg);
+        border-radius: 30%;
+    }
+    90%{
+        transform: translateY(-50%) scale(.75) rotate(300deg);
+        border-radius: 30%;
+    }
+    100%{
+        transform: translateY(-50%) scale(1) rotate(360deg);
+        border-radius: 0;
+    }
+}
+@keyframes rotat1{
+    from{
+        transform: translateY(-50%) scale(0) rotate(0deg);
+        border-radius: 50%;
+    }
+    to{
+        transform: translateY(-50%) scale(1) rotate(360deg);
+        border-radius: 0;
+    }
+}
+
+/* Change Website Color Theme With CSS Variables */
+
+.switch-color{
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+}
+.switch-color li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 50%;
+    border: 1px solid #FFF;
+    transition: all .5s ease-in-out;
+
+}
+.switch-color li.active{
+    transform: scale(1.3);
+}
+.switch-color li:hover{
+    transform: scale(1.3);
+}
+
+/*===============================================*/
+.spiner{
+    background-color: aqua;
+    width: 500px;
+    height:500px;
+    margin: 100px;
+    padding: 100px;
+    position: relative;
+}
+.spiner span{
+    position: absolute;
+    border: 5px solid transparent;
+    border-top-color: tomato;
+    border-radius: 50%;
+    display: block;
+    transform: rotate(0deg);
+    animation: spiner linear infinite;
+}
+.spiner span.one{
+    animation-duration: 1.85s;
+    top:50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+}
+.spiner span.two{
+    animation-duration: 1.95s;
+    animation-direction:  reverse;
+    top:38px;
+    left: 38px;
+    width: 75px;
+    height: 75px;
+}
+.spiner span.three{
+    animation-duration: 2.05s;
+    top:25px;
+    left: 25px;
+    width: 100px;
+    height: 100px;
+}
+@keyframes spiner{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

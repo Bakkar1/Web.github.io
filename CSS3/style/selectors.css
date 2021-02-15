@@ -1,0 +1,107 @@
+/* Selectors - Next ~ , Start With ^ , End With $ , Contains * */
+.select1 div{
+    border: 1px solid #000;
+}
+/*next in same parent*/
+.select1 p ~ span{
+    color: red;
+}
+/* stat with letter or word*/
+/* [attribute^= value]{
+    color: #ddd
+} */
+.select1 [class^= "ali"]{
+    color: green;
+}
+/* end with letter or word*/
+/* [attribute$= value]{
+    color: #ddd
+} */
+.select1 [data-size $="i"]{
+    font-size: 16px;
+}
+/* contains letter or word*/
+/* [attribute*= value]{
+    color: #ddd
+} */
+.select1 [class *= "f"]{
+    font-family: sans-serif;
+}
+
+/* checked, Enabled, Disabled, Empty 
+
+    Empty: no text nodes no element nodes
+*/
+.formSelect{
+    margin: 100px;
+}
+.formSelect input:checked{
+    color: blue;
+    width: 100px;
+}
+
+.formSelect input[type="text"]:enabled{
+    background-color: green;
+}
+.formSelect input[type="text"]:disabled{
+    background-color: coral;
+}
+.formSelect p:empty{
+    width: 30px;
+    height: 10px;
+    background-color: lawngreen;
+}
+
+
+/*
+  p:not(selector){
+    selector element/class/attr li maytba9ch 3lih hadchi matalan :first-child
+
+    element :first-child{
+        awal child fwst hadak element
+    }
+
+    element:first-of-type{
+        awal type mn hadak element
+    }
+  }  
+*/
+
+/* 
+    Only-Child, Only-Of-Type, Selection
+
+    element:only-child{
+      fa9at element li f parent whadak lparent 3ando wa7d child 
+    }
+
+    elemnt:only-of-type{
+        fa9at l element li mn hadak type whwa bo7do li kayn w
+        makynch chi type akhor b7alo m3ah fnafs l parent
+    }
+
+    ::selection{
+        fach kadir selection 3la chi text fl page
+    }
+*/
+::selection{
+    background-color: brown;
+}
+
+
+
+/*
+    nth: number th[1st,2nd, 3rd, 4th.....]
+
+    element :nth-child(n){
+        child number n
+    }
+    element:nth-of-type(n){
+        type element number n
+    }
+
+    odd : 2n+1
+    even : 2n
+
+    n+number
+    -n+number    
+*/

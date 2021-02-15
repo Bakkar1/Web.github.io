@@ -1,0 +1,78 @@
+cmder kayfham kolchi windows mac linux
+
+touch fileName.xx katdir biha file jdid
+md / mkdir filename filename filename : kat9der dir biha ktar mn milaf fmara wa7da
+
+mkdir place/filename
+mkdir ../images
+mkdir folderName/css
+touch folderName/index.html
+
+rename filname niewfilename
+
+commnadName --help => information
+rm --help
+
+cp -r folderName1 folderName2 : copie / -r bach ydir copie l folder wdakchi li westo
+
+rm folderName : remove
+rm -r folderName :  bach ydir remove l folder wdakchi li westo
+rm -d folderName : remove folderName if it empty
+
+ech massege > fileName : yla fileName makaynch kaydiro kaykteb fih massege 
+	/ yla fileName kayn kaydir override 3la dakchi li fih 
+
+ech massege >> fileName : kayzid l massege 3la dakchi li deja kayn fl fileName
+
+cat : from concatination
+cat filName : kayjib lik dakchi li west fileName
+cat filName1 fileName2 fileName3 :kayjib lik dakchi li westhom
+
+cat filName > fileName2 : copie inhoud filName naar filName2 en override 
+cat filName >> fileName2 : copie inhoud filName naar filName2 not override 
+
+==
+grep kadir bih search
+
+grep searchWord filname
+grep searchWord -r : ghay9alab f ga3 l files w folders wli wsthom
+grep searchWord -r foldername : ghay9alab fhadak folder wli wsto mn files w folders
+grep searchWord -r -l ghaydir list lfiles li fihom hadik l kalma
+
+
+file filename : kay3tik no3 l file
+
+command /? : ghayjib lik l manual dyal hadak command
+
+move /?
+
+ctr + c: ghaywa9af ay 7aja mabghat tsali
+
+tree /a : ghayjib lik l articher dyal l file fach nta ga3 folders wl files
+
+osk : on scrren keyborad ghayfta7 l keyborad
+
+tasklist 
+================================
+windows :
+clear
+
+dir :kayjib likl files li 3andak
+
+move filname/folderName  filename2 : if filename2 not exist => rename
+
+move filname1/folderName  filename2 : if filename2 exist => moving
+
+ 
+================================
+linux / mac :
+
+cls 
+
+ls : kayjib lik list dyal files li 3andak 
+
+mv : filname niewfilename : rename
+
+mv filname filename2 : if filename2 exist => moving
+
+man 
