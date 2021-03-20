@@ -106,12 +106,13 @@ body{
     align-items: center;
 }
 
-.game-markup .memory-game-blocks .game-block.is-flipped{
+.game-markup .memory-game-blocks .game-block.is-flipped,
+.game-markup .memory-game-blocks .game-block.has-matched{
     transform: rotateY(180deg);
-}
-
-.rmvClicking{
     pointer-events: none;
 }
 
+.no-Clicking{
+    pointer-events: none;
+}
 /* end game markup */

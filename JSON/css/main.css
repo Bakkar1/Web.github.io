@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+}
+
+:root{
+    --overly-color: rgba(0, 0, 0, .3);
+    --default-color: #FFF;
+    --main-color: rgba(255, 152, 0, 1);
+    --default-transition: all .5s ease-in-out;
+    --default-padding : 50px 0;
+--blue-color: #3497DB;
+}
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    margin: auto;
+}
+.h2{
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--main-color);
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.visibale-xs, /*hadak elemnt ghaykon mkhfi fga3 lmedia ila l media li khtaritha lih ghayban fiha*/
+.visibale-sm,
+.visibale-md,
+.visibale-lg{
+    display: none;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.clearFix{
+    clear: both;
+}
+/*
+    Create Heading Class
+    7it maymknch ykon 3andk ktar m h1 fl page
+    hadakchi 3alch kadir class h1 wt3tih khawas h1
+*/
+.h1{
+    font-size: 2em;
+}
+.h2{
+    font-size: 1.5em;
+}
+
+/* start global media */
+@media ( max-width : 767px) and (min-width : 200px) /*hadchi ghaytab9 3la ay chacha l width dyalha makyfot 767px*/
+{
+    .visibale-xs
+    {
+        display: block !important;
+    }
+    .hidden-xs /*hadak elemnt ghaytkhfa fhad l media wyban fl media lokhrin*/
+    {
+        display: none !important;
+    }
+    .resp-paragraph{
+        font-size: 18px;
+    }
+}
+@media (min-width : 768px)
+{
+    .container
+    {
+        width: 780px;
+    }
+    .visibale-sm
+    {
+        display: block !important;
+    }
+    .hidden-sm
+    {
+        display: none !important;
+    }
+    .resp-paragraph{
+        font-size: 20px;
+    }
+}
+@media (min-width : 992px)
+{
+    .container
+    {
+        width: 1000px;
+    }
+    .visibale-md
+    {
+        display: block !important;
+    }
+    .hidden-md
+    {
+        display: none !important;
+    }
+    .resp-paragraph{
+        font-size: 22px;
+    }
+}
+
+@media (min-width : 1200px)
+{
+    .container
+    {
+        width: 1200px;
+    }
+    .visibale-lg
+    {
+        display: block !important;
+    }
+    .hidden-lg
+    {
+        display: none !important;
+    }
+    .resp-paragraph{
+        font-size: 24px;
+    }
+}
+/* end global media */

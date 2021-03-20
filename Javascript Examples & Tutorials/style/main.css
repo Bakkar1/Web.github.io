@@ -147,38 +147,42 @@ i{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 200px;
+    width: 50px;
+    height: 50px;
     margin: 30px auto;
     perspective: 300px;
+
 }
-.swipUp:hover .swip-parent{
-    transform: rotateY(180deg);
-}
-.swipUp .swip-parent{
+.swipUp:hover span{
+    background-color: white;
     position: relative;
-    width: fit-content;
-    height: fit-content;
-    transform-style: preserve-3d;
-    transition: 2s;
-    perspective: 300px;
+    left: -10px;
 }
-.swipUp .swip-parent i{
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 30px;
-    backface-visibility: hidden;
+.swipUp:hover span::after{
+    transform: rotate(-45deg);
+    width: 30px;
 }
-.swipUp .swip-parent i:last-child{
-    transform: rotateX(180deg);
+.swipUp:hover span::before{
+    transform: rotate(45deg);
+    width: 30px;
 }
-
-
-
-#imageEveryX{
-    height: 400px;
-    width: 200px;
-    transition: all .5s ease-in-out;
+.swipUp span,
+.swipUp span::after,
+.swipUp span::before{
+    width: 30px;
+    height: 5px;
     background-color: #c0392b;
+}
+.swipUp span::after,
+.swipUp span::before{
+    left: 0;
+    content: "";
+    position: absolute;
+    transition: all 1s ease-in-out;
+}
+.swipUp span::before{
+    top:0;
+}
+.swipUp span::after{
+    bottom: 0;
 }

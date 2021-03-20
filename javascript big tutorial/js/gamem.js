@@ -69,6 +69,17 @@ blocks.forEach((block,index) =>{ //index of block
     });
 });
 
+function stopClicking(){
+    
+    blocksContainer.classList.add('no-Clicking');
+
+    setTimeout(function(){
+        //remove class no clicking after the duration
+        blocksContainer.classList.remove('no-Clicking');
+    }, duration);
+}
+
+
 //Create The Flip Block Function
 function flipBlock(selectedBlock){
     //add class is fliped
@@ -81,18 +92,31 @@ function flipBlock(selectedBlock){
     //if theres two selected blocks
     if(allFlippedBlocks.length === 2){
         //stop clicking funtion
-        blocks.forEach(blck => {
-            blck.classList.add('rmvClicking');
-            //blck.preventDefault();
-            
-        });
+        stopClicking();
         //check matched block function
-        if(allFlippedBlocks[0].getAttribute('data-technology') ==
-        allFlippedBlocks[1].getAttribute('data-technology')){
-            console.log("equal");
-        }
-        else{
-            console.log('not equal');
-        }
+        checkFun(allFlippedBlocks);
     }
+}
+
+//check matched block
+function checkFun(filpedds){
+    let triesElement = document.querySelector('.tries span');
+    if(filpedds[0].dataset.technology ==
+    filpedds[1].dataset.technology){
+        filpedds.forEach(flip => {
+            flip.classList.add('has-matched');
+        })
+
+        //document.getElementById('success').play();
+    }
+    else{
+        triesElement.textContent = parseInt(triesElement.textContent)+ 1;
+        //document.getElementById('fail').play();
+    }
+    setTimeout(function(){ 
+        filpedds.forEach(flip => {
+            flip.classList.remove('is-flipped');
+        })
+    }, duration);
+    
 }

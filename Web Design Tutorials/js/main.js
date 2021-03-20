@@ -45,3 +45,8 @@ function handelActiveClass(el){
     switchColorCss.forEach(e =>{e.classList.remove('active')});
     el.classList.add('active');
 }
+
+
+document.querySelector('.bar').onclick = function(){
+    Array.from(this.children).forEach((bar)=>{bar.classList.toggle('active')});
+}

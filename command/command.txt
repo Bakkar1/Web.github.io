@@ -6,7 +6,7 @@ md / mkdir filename filename filename : kat9der dir biha ktar mn milaf fmara wa7
 mkdir place/filename
 mkdir ../images
 mkdir folderName/css
-touch folderName/index.html
+touch fileName/index.html
 
 rename filname niewfilename
 

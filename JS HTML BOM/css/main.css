@@ -42,6 +42,11 @@ body{
 .clearFix{
     clear: both;
 }
+img{
+    margin-top: 300px;
+    max-width: 100%;
+    max-height: 100%
+}
 /*
     Create Heading Class
     7it maymknch ykon 3andk ktar m h1 fl page

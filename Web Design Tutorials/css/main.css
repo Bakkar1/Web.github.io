@@ -138,6 +138,9 @@
     list-style: none;
     padding: 0;
     margin: 20px;
+    position: absolute;
+    top: 0;
+    left: 300px;
 }
 .switch-color li {
     display: inline-block;
@@ -204,4 +207,171 @@
     to{
         transform: rotate(360deg);
     }
+}
+/* Create Spinner Loading With Background and Many Styles */
+.spinnerOne{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 50px;
+    border: 5px solid #FFF;
+    border-top-color: #F00;
+    border-bottom-color: #F00;
+    animation: spinerOne 1.5s linear infinite;
+    background-color: gray;
+    position: relative;
+}
+.spinnerOne::after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 80px;
+    height: 80px;
+    border: 5px solid blue;
+    border-radius: 50%;
+
+}
+@keyframes spinerOne{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* ================================================== */
+
+.fil-border{
+    height: 60vh;
+    margin: 40px;
+    position: relative;
+}
+.fil-border:hover span.eerste,
+.fil-border:hover span.derde{
+    transform: scaleX(1);
+}
+.fil-border:hover span.eerste{
+    transition-delay: 0s;
+}
+.fil-border:hover span.tweede{
+    transition-delay: .3s;
+}
+.fil-border:hover span.derde{
+    transition-delay: .6s;
+}
+.fil-border:hover span.vierde{
+    transition-delay: .9s;
+}
+.fil-border:hover span.tweede,
+.fil-border:hover span.vierde{
+    transform: scaleY(1);
+}
+
+
+.fil-border img{
+    height: 100%;
+    width: 100%;
+    transition: all .2s ease-in-out;
+    transition-delay: .1s;
+}
+.fil-border:hover img{
+    transition-delay: 1.2s;
+    opacity: .1;
+}
+.fil-border span{
+    content: '';
+    position: absolute;
+    background-color: #F00;
+    transition: all .3s ease-in-out;
+}
+.fil-border h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    opacity: 0;
+    transition-duration: .3s;
+    transition-delay: 0s;
+}
+.fil-border:hover h3{
+    transition-delay: 1.3s;
+    opacity: 1;
+}
+.fil-border span.eerste,
+.fil-border span.derde{
+    left: 0;
+    width: 100%;
+    height: 5px;
+    transform: scaleX(0);
+}
+.fil-border span.eerste{
+    top: 0;
+    transform-origin: right;
+    transition-delay: 1.3s;
+}
+
+.fil-border span.tweede,
+.fil-border span.vierde{
+    top: 0;
+    height: 100%;
+    width: 5px;
+    transform: scaleY(0);
+}
+.fil-border span.tweede{
+    left: 0;
+    transform-origin: top;
+    transition-delay: 1s;
+}
+.fil-border span.derde{
+    bottom: 0;
+    transform-origin: left;
+    transition-delay: .7s;
+}
+.fil-border span.vierde{
+    right: 0;
+    transform-origin: bottom;
+    transition-delay: .4s;
+}
+
+.bar{
+    height: 50px;
+    width: 50px;
+    background-color: #F00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.burger span{
+    width: 80%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    transition: all .5s ease-in-out;
+}
+.burger span:first-of-type{
+    top: 20%
+}
+.burger span:nth-of-type(2){
+    transform: scale(1);
+}
+.burger span:last-of-type{
+    top: 80%
+}
+
+
+.burger span.active:first-of-type{
+    transform: translateY(-50%) rotate(45deg);
+    top: 50%;
+}
+.burger span.active:nth-of-type(2){
+    transform: scale(0);
+}
+.burger span.active:last-of-type{
+    transform: translateY(-50%) rotate(-45deg);
+    top: 50%;
 }

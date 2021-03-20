@@ -1,0 +1,30 @@
+syntax
+
+- data written inseide curly braces {}
+- data contains key => value
+- key and value separated by colon : // "key":value
+- key should be wrapped in double qoutes // "key":value
+- separate data by comm (,) // { "key":value,"key":value}
+- can be written in one line or multiple lines depend on data
+- square brackets conatins array []
+- curly braces conatines {}
+
+data type
+
+- number
+- string
+- json object
+- array
+- boolean
+- null
+
+===================================================
+js vs json
+
+js can use '' code but in json not
+
+
+//==================================================
+
+
+

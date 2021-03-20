@@ -1,8 +1,9 @@
+
 // Window
 /*
     window object is the browser window
-    winsow is the default object of browser
-    all global js objewts are members of winsow object
+    window is the default object of browser
+    all global js objects are members of window object
     window.print() b7al yla clickt 3la print
 */
 
@@ -51,14 +52,14 @@ else{
     clearTimeout(id or number of setTimeout);
 
 */
-var timeout = setTimeout(function(){
-    window.console.log("hello after 4 seconds");
-},4000);
+// var timeout = setTimeout(function(){
+//     window.console.log("hello after 4 seconds");
+// },4000);
 
-document.getElementById('clearTime').onclick = function(){
-    clearTimeout(timeout);
-    console.log('time out is cleared');
-}
+// document.getElementById('clearTime').onclick = function(){
+//     clearTimeout(timeout);
+//     console.log('time out is cleared');
+// }
 
 //+=================================================================
 /*
@@ -69,15 +70,15 @@ document.getElementById('clearTime').onclick = function(){
 
 */
 
-var i = 20;
-var myInter = setInterval(() => {
-    console.log("ruming : " + i);
-    i--;
-    if(i< 0){
-        console.log('done');
-        clearInterval(myInter);
-    }
-}, (1000));
+// var i = 20;
+// var myInter = setInterval(() => {
+//     console.log("ruming : " + i);
+//     i--;
+//     if(i< 0){
+//         console.log('done');
+//         clearInterval(myInter);
+//     }
+// }, (1000));
 
 //+=================================================================
 /*
@@ -100,13 +101,14 @@ var myInter = setInterval(() => {
     kaykhdmo biha sitit li fach katkliki 3la chi button katkhorj lik
     popup  new page fiha advertentie ....
 */
+// var mynewwin;
+// document.getElementById('open').onclick = function(){
+//     mynewwin = window.open("https://www.google.com", 
+//         "", 
+//         "width=400,height=400,left=400,top=400,menubar=no,status=no", 
+//         "");
+// }
 
-document.getElementById('open').onclick = function(){
-    window.open("https://www.google.com", 
-        "", 
-        "width=400,height=400,left=400,top=400,menubar=no,status=no", 
-        "");
-}
 
 
 //==================================================================
@@ -119,13 +121,129 @@ document.getElementById('open').onclick = function(){
     scrollTo kaydir scroll li7datiyat x,y li 3tito
     scrollTo(x,y) only number
 */
-let scrollby = document.getElementById('scrollBy');
+// let scrollby = document.getElementById('scrollBy');
 
-scrollby.onclick = function(){
-    window.scrollBy(0,400);
-}
-let scrollTo = document.getElementById('scrollTo');
+// scrollby.onclick = function(){
+//     window.scrollBy(0,400);
+// }
+// let scrollTo = document.getElementById('scrollTo');
 
-scrollTo.onclick = function(){
-    window.scrollTo(0,400);
-}
+// scrollTo.onclick = function(){
+//     window.scrollTo(0,400);
+// }
+
+//===============================================================
+//Stop, Close, Focus
+/*
+    window.stop(); stop kaydir stop l loding
+    window.colse(); kadir close lchi window
+    window.focus(); kaydir focus 3la chi window nta takhtarha
+*/
+
+//fta7 lawal open link new window
+// document.getElementById('close').onclick = function(){
+//     mynewwin.close();
+// }
+// document.getElementById('focus').onclick = function(){
+//     mynewwin.focus();
+// }
+
+//===============================================================
+//Window Properties - innerHeight, innerWidth
+
+// console.log("window inner width " + window.innerWidth);
+// console.log("window inner height " + window.innerHeight);
+// console.log("window inner outer width " + window.outerWidth);
+// console.log("window inner outer height " + window.outerHeight);
+
+//===============================================================
+//Window Properties - pageXOffset, pageYOffset
+/*
+    kaykhalik ta3raf ch7al bach t7rak scroll
+    
+    lihom alias
+    window.scrollY b7alha b7al pageYOffset
+    window.scrollX b7alha b7al pageXOffset
+
+*/
+
+// window.onscroll = function(){
+//     console.log("scroll Y move  px :" + window.pageYOffset);
+// }
+
+
+/*
+    ====================================================================
+    Window Location Properties - Href
+
+    kayjib lik link dyal window li lfo9
+
+    get : window.location.href
+    set : window.location.href = "url"
+    
+    href kay9bal :
+
+    window.location.href = "https://www/....." absolute url
+    window.location.href = "page.html" page
+    window.location.href = "#idInPage"
+    window.location.href = 'mailto:test@elzero.com'; mail
+
+    y9der yfta7 protocl[ftp,mail,file,...]
+*/
+
+// console.log("location van window " + window.location.href);
+
+// document.getElementById('locat').onclick = function(){
+//     // location.href = "https://www.google.com";
+//     //window.location.href = 'test.html';
+//     location.href = "#testLocation";
+// }
+
+//+==============================================================
+/*
+    Location Properties - Host, Hash
+
+    location.host : kayjib lik fin dayr host l web site local...
+    
+    get: location.host
+    set : location.host = "url/href..."
+
+    location.hash kayjib lik l hash li hwa matalan #example
+    get: location.hash 
+    set : location.hash = "#test"
+*/
+// console.log("location host " + location.host);
+// console.log("location hash " + location.hash);
+
+
+//==================================================================
+// Location Properties - Protocol, Search, Pathname
+
+
+/*
+    kolhom t9der dir lihom get w set
+
+    protocol : http = hypertext transfer protocol
+        https : hypertext transfer protocol secuerd
+        file 
+        mailto
+        ftp : file transfer protocol : kadir biha upload l file f site
+
+    get location.protocol
+    set location.protocol = "";
+
+    get location.search 
+    katjib lik lquery string li f url bach kat9alab li mn ba3d ?
+
+    set location.search = ""
+
+    location.pathname kayjib lik only path name
+
+*/
+
+// console.log("protocol " + location.protocol);
+// window.onload = function()
+// { 
+//     console.log(location.search);
+//     console.log("path " + location.pathname);
+// };
