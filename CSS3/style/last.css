@@ -47,3 +47,32 @@ https://responsivedesign.is/develop/browser-feature-support/media-queries-for-co
 https://gist.github.com/hs0ucy/3762901
 
 */
+
+/* //+========================================================================= */
+
+/* repeating gradients  kaykhdomo fblast image
+
+    loon ghadi ytdaraj khatiyan mn color1 wydoz m3a color2,3... 7tal colorn
+
+    color xx% or xxpx katkhtar fin yabda tadaroj
+    to direction : left top right bottom
+    deg
+
+    linear-gradient(to left bottom,color1 22%,color2,color3....colorn)
+        
+    =======
+
+    radial-gradient() katdir tadaroj bdaira
+*/
+.gradients{
+    height: 500px;
+    width: 500px;
+    margin: 50px auto;
+    /* background-image: linear-gradient(to left top,red 10%,green,orange); */
+    /* background-image: radial-gradient(red 50%,green); */
+
+    /* background-image: repeating-radial-gradient(red,red 10px,blue 10px,blue 20px); */
+
+    background-image: repeating-linear-gradient(to top right,red,red 10px,blue 10px,blue 20px);
+
+}

@@ -247,3 +247,45 @@ else{
 //     console.log(location.search);
 //     console.log("path " + location.pathname);
 // };
+
+//==================================================================
+
+// Location Methods - Reload, Replace, Assign
+/*
+    assign : kat7awlak 3la link 
+    location.assign("url")
+
+    location.replace('url') kay7awlak 3la link wkaydir lih replace fl history fblsat huidige link page
+
+    location.reload(false); kaydir reload mn l cach
+
+    location.reload(true) kaydir reload mn server
+
+*/
+
+// ====================================================================
+// History Methods - Back, Forward, Go
+
+/*
+    console.log(history.length);
+    history.length : kay7sab number links li fl history
+
+    history.forward(); next link ghadi ymschi lgodam b7al ula drit click 3la sahm limen lfou9
+    
+    history.back(); previes link ghadi yarj3 l link li 9bal huidige page b7al yla dirt click 3la sham liser lfou9
+
+
+    history.go(); kat9bal url wala number negatief wala positief
+
+    history.go(0); huidige page
+
+    history.go(1); next page
+    history.go(-1); preb page
+*/
+
+// history.go(2);
+
+
+
+
+

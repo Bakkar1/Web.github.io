@@ -1,8 +1,96 @@
 :root{
     --main-color: #F00;
+    --main-transition: all .5s ease-in-out;
 }
 *{
     box-sizing: border-box;
+}
+/* img hover effect 13 */
+.img13{
+    height: 300px;
+    width: 500px;
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #F00;
+    transition: var(--main-transition);
+    z-index: 3;
+}
+.img13:hover img{
+    opacity: .5;
+}
+.img13:hover h3{
+    transform: translateY(0);
+}
+.img13 img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    transition: var(--main-transition);
+}
+.img13 h3{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    color: red;
+    border-top: 2px solid ;
+    border-right: 2px solid ;
+    padding: 5px 20px;
+    margin: 0;
+    transform: translateY(100%);
+    transition: var(--main-transition);
+}
+/* end img hover effect 13 */
+/* using calc */
+.hover-calc{
+    height: 300px;
+    width: 500px;
+    margin: 100px auto;
+    position: relative;
+}
+.hover-calc:hover img{
+    opacity: 1;
+}
+.hover-calc:hover .title::after{
+    width: calc(100% + 5px)
+}
+.hover-calc img{
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: .5;
+    transition: .5s ease-in-out;
+}
+.hover-calc .title{
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+}
+.hover-calc .title h3{
+    color: white;
+    padding: 10px 15px;
+    position: relative;
+    font-size: 20px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: turquoise;
+}
+.hover-calc .title::after{
+    content: '';
+    transition: .5s ease-in-out;
+    color: white;
+    background-color: white;
+    position: absolute;
+    z-index: 0;
+    width: 0;
+    height: calc(100% + 10px);
+    left: 0;
+    bottom: -5px;
 }
 /* Create Custom Radio With Transform Animation */
 .z-radio{
@@ -374,4 +462,51 @@
 .burger span.active:last-of-type{
     transform: translateY(-50%) rotate(-45deg);
     top: 50%;
+}
+
+
+/* ================================================================== */
+.text-fil-efect ul{
+    list-style: none;
+    display: flex;
+    background-color: #333;
+    padding: 50px;
+    font-family: tahoma,Geneva;
+}
+.text-fil-efect ul li{
+    margin-right: 20px;
+}
+.text-fil-efect ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, .5);
+    position: relative;
+}
+.text-fil-efect ul li a:hover::before{
+    transform: scale(1);
+}
+.text-fil-efect ul li a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #E91E63;
+    transform: scale(0);
+    transform-origin: left;
+    transition: all .5s ease-in-out
+}
+.text-fil-efect ul li a:hover::after{
+    width: 100%;
+}
+.text-fil-efect ul li a::after{
+    content: attr(data-text);
+    white-space: nowrap;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 0%;
+    color:white;
+    transition: all .5s ease-in-out;
 }

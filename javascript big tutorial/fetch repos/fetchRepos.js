@@ -16,7 +16,7 @@ function getRepos(){
     else{
         reposData.innerHTML = "";
 
-        fetch('https://api.github.com/users/Bakkar1/repos')
+        fetch(`https://api.github.com/users/${theInput.value}/repos`)
 
         .then(response => response.json())
 
@@ -35,7 +35,7 @@ function getRepos(){
                 let repoUrl = document.createElement('a');
                 repoUrl.textContent = "Visit";
                 //add the href
-                repoUrl.href = `https://${repo.owner.login}.github.io/${repo.name}`;
+                repoUrl.href = repo.html_url;
                 //set attribute blank
                 repoUrl.setAttribute('target','_blank');
                 //appen the repourl to maindiv
@@ -45,7 +45,10 @@ function getRepos(){
                 let stargzersCount = document.createElement('span');
                 stargzersCount.textContent = repo.stargazers_count;
                 stargzersCount.style.marginLeft = "30px";
+                
                 mainDiv.appendChild(stargzersCount);
+
+                mainDiv.className = "repo-box";
 
                 //append the main div to container
                 reposData.appendChild(mainDiv)
@@ -53,3 +56,7 @@ function getRepos(){
         });
     }
 }
+
+
+//oefening doe de same with this api
+// https://jsonplaceholder.typicode.com/

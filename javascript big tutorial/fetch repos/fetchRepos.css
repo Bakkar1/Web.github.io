@@ -42,3 +42,30 @@ body{
     padding: 20px;
     background-color: #E0E0E0;
 }
+.repos-container .show-data .repo-box{
+    background-color: white;
+    padding: 15px;
+}
+.repos-container .show-data .repo-box:not(:last-child){
+    margin-bottom: 5px;
+}
+
+.repos-container .show-data .repo-box a,
+.repos-container .show-data .repo-box span{
+    float: right;
+    margin-left: 4px;
+    border-radius: 4px;
+    color: #FFF;
+    font-size: 12px;
+    width: 90px;
+    text-align: center;
+    padding: 4px;
+
+}
+.repos-container .show-data .repo-box a{
+    text-decoration: none;
+    background-color: #E91363;
+}
+.repos-container .show-data .repo-box span{
+    background-color: #009688;
+}
